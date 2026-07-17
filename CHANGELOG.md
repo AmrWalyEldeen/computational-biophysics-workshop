@@ -1,16 +1,16 @@
 # Changelog
 
-## Version 3.0.1 — Adaptive device layout
+## 3.0.2 — Layout integrity update
 
-- Added immediate viewport classification: mobile, tablet, or desktop.
-- Added orientation and touch-input detection.
-- Added device-specific hero, navigation, grids, gallery, QR and location layouts.
-- Disabled costly hero canvas animation on mobile and reduced it on tablet.
-- Added live adaptation during resize and device rotation.
-- Preserved all logo, poster and QR-code aspect ratios.
-- Added CSS media-query fallbacks when JavaScript is unavailable.
+- Dynamically fits the two long hero-title words to the real width of the text column.
+- Prevents the desktop heading from entering the workshop-logo column.
+- Preserves intrinsic image aspect ratios throughout the hero and institutional header.
+- Changes the institutional logo strip to a complete 2×2 mobile layout on narrow phones.
+- Removes fixed-height image clipping from the four institutional logos.
+- Improves the mobile announcement bar and workshop-logo scale.
 
-## Version 2.0.0 — Responsive correction
+## 3.0.1 — Adaptive device update
 
-- Prevented hero title and workshop-logo overlap.
-- Corrected QR-code aspect ratios.
+- Added mobile, tablet and desktop device classification.
+- Added orientation and input-mode attributes.
+- Added touch-first mobile content layouts.

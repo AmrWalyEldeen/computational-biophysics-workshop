@@ -1,14 +1,9 @@
-# Updating the GitHub Pages website to version 3
+# Update to v3.0.2
 
-Upload these items to the repository root and allow GitHub to replace the existing versions:
+Upload these items to the root of the GitHub repository and allow GitHub to replace the existing versions:
 
 - `index.html`
 - `assets/css/styles.css`
-- `assets/js/main.js`
 - `assets/js/device.js`
 
-Commit message:
-
-`Add adaptive mobile tablet and desktop layouts`
-
-After GitHub Pages deploys, open the website and press `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.
+After committing, wait for GitHub Pages to deploy and force-refresh the website with `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.

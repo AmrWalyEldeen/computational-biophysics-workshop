@@ -61,3 +61,65 @@
   window.visualViewport?.addEventListener('resize', scheduleUpdate, { passive: true });
   touchQuery.addEventListener?.('change', scheduleUpdate);
 })();
+
+/* Layout integrity v3.0.2: fit the two long hero words to the actual
+   width of the text column after fonts, orientation and viewport settle. */
+(() => {
+  'use strict';
+
+  const root = document.documentElement;
+  let fitFrame = 0;
+
+  function titleLimits() {
+    switch (root.dataset.device) {
+      case 'mobile': return { min: 27, max: 49 };
+      case 'tablet': return { min: 42, max: 74 };
+      default: return { min: 48, max: 82 };
+    }
+  }
+
+  function fitHeroTitle() {
+    fitFrame = 0;
+    const copy = document.querySelector('.hero-copy');
+    const title = document.getElementById('hero-title');
+    const words = title ? Array.from(title.querySelectorAll(':scope > span')) : [];
+    if (!copy || !title || !words.length) return;
+
+    const available = Math.max(0, Math.floor(copy.getBoundingClientRect().width) - 12);
+    if (!available) return;
+
+    const { min, max } = titleLimits();
+    let low = min;
+    let high = max;
+
+    title.style.setProperty('--hero-title-size', `${max}px`);
+
+    for (let i = 0; i < 9; i += 1) {
+      const middle = (low + high) / 2;
+      title.style.setProperty('--hero-title-size', `${middle}px`);
+      const fits = words.every((word) => {
+        const range = document.createRange();
+        range.selectNodeContents(word);
+        const width = range.getBoundingClientRect().width;
+        range.detach?.();
+        return width <= available + 1;
+      });
+      if (fits) low = middle;
+      else high = middle;
+    }
+
+    title.style.setProperty('--hero-title-size', `${Math.floor(low * 10) / 10}px`);
+  }
+
+  function scheduleHeroFit() {
+    if (fitFrame) cancelAnimationFrame(fitFrame);
+    fitFrame = requestAnimationFrame(fitHeroTitle);
+  }
+
+  window.addEventListener('DOMContentLoaded', scheduleHeroFit, { once: true });
+  window.addEventListener('load', scheduleHeroFit, { once: true });
+  window.addEventListener('devicechange', scheduleHeroFit);
+  window.addEventListener('resize', scheduleHeroFit, { passive: true });
+  window.addEventListener('orientationchange', scheduleHeroFit, { passive: true });
+  document.fonts?.ready.then(scheduleHeroFit).catch(() => {});
+})();

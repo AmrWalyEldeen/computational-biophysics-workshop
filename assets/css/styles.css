@@ -1670,3 +1670,243 @@ html[data-device="mobile"] .hero h1 > span {
   overflow-wrap: normal;
   word-break: normal;
 }
+
+/* =========================================================
+   Layout integrity patch v3.0.2
+   Prevents hero text/image collisions and preserves the full
+   institutional logos on narrow mobile screens.
+   ========================================================= */
+
+/* Use one measured title size for both hero words. The JavaScript
+   fitter writes --hero-title-size after measuring the available column. */
+.hero-copy,
+.hero h1,
+.hero h1 > span {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero h1 > span {
+  font-size: var(--hero-title-size, clamp(3.25rem, 4.35vw, 5rem));
+  white-space: nowrap;
+  overflow: visible;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+.hero-logo-shell,
+.hero-logo-shell > img {
+  max-width: 100%;
+}
+
+.hero-logo-shell > img {
+  width: 88%;
+  height: auto !important;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+/* Keep the desktop title within its own grid track instead of allowing
+   a long word to visually enter the workshop-logo column. */
+html[data-device="desktop"] .hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(410px, .82fr);
+  gap: clamp(34px, 3.6vw, 58px);
+}
+
+html[data-device="desktop"] .hero-copy {
+  width: 100%;
+  overflow: visible;
+}
+
+html[data-device="desktop"] .hero h1 > span {
+  font-size: var(--hero-title-size, clamp(3.35rem, 4.2vw, 5rem));
+}
+
+html[data-device="desktop"] .hero-logo-shell {
+  width: min(100%, 500px);
+}
+
+/* Institutional marks always use their intrinsic aspect ratios. */
+.institution-logo {
+  overflow: visible;
+}
+
+.institution-logo img,
+.institution-logo--round img,
+.institution-logo--wide img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Tablet keeps a single-row logo strip but gives the marks more vertical room. */
+html[data-device="tablet"] .institution-strip {
+  min-height: 104px;
+  padding-block: 12px;
+}
+
+html[data-device="tablet"] .institution-logo {
+  height: 76px;
+}
+
+/* Mobile: no fixed-height clipping. On normal phones the four marks are
+   arranged as a balanced 2×2 grid so every original logo is fully visible. */
+html[data-device="mobile"] .institution-strip {
+  min-height: 0;
+  height: auto;
+  padding: 12px 10px 14px;
+  align-items: center;
+  overflow: visible;
+}
+
+html[data-device="mobile"] .institution-logo {
+  height: 68px;
+  min-height: 68px;
+  padding: 2px 4px;
+  overflow: visible;
+}
+
+html[data-device="mobile"] .institution-logo img,
+html[data-device="mobile"] .institution-logo--round img,
+html[data-device="mobile"] .institution-logo--wide img {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 64px;
+  object-fit: contain;
+}
+
+html[data-device="mobile"] .institution-logo--cairo img {
+  max-height: 66px;
+}
+
+html[data-device="mobile"] .institution-logo--centennial img {
+  max-height: 54px;
+}
+
+html[data-device="mobile"] .hero-logo-shell {
+  width: min(68vw, 238px);
+}
+
+html[data-device="mobile"] .hero-visual {
+  min-height: 214px;
+}
+
+html[data-device="mobile"] .hero h1 > span {
+  font-size: var(--hero-title-size, clamp(1.78rem, 8.4vw, 2.32rem));
+  white-space: nowrap;
+}
+
+@media (max-width: 480px) {
+  html[data-device="mobile"] .institution-strip,
+  html:not(.device-ready) .institution-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 16px;
+  }
+
+  html[data-device="mobile"] .institution-logo,
+  html:not(.device-ready) .institution-logo {
+    height: 66px;
+    min-height: 66px;
+  }
+
+  html[data-device="mobile"] .institution-logo img,
+  html[data-device="mobile"] .institution-logo--round img,
+  html[data-device="mobile"] .institution-logo--wide img,
+  html:not(.device-ready) .institution-logo img {
+    width: auto !important;
+    height: auto !important;
+    max-width: 100%;
+    max-height: 62px;
+  }
+
+  html[data-device="mobile"] .institution-logo--centennial img,
+  html:not(.device-ready) .institution-logo--centennial img {
+    max-height: 52px;
+  }
+
+  html[data-device="mobile"] .announcement-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 10px;
+    padding-block: 7px;
+    text-align: start;
+  }
+
+  html[data-device="mobile"] .announcement-link {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 360px) {
+  html[data-device="mobile"] .institution-strip {
+    gap: 6px 10px;
+    padding-inline: 8px;
+  }
+
+  html[data-device="mobile"] .institution-logo {
+    height: 60px;
+    min-height: 60px;
+  }
+
+  html[data-device="mobile"] .institution-logo img,
+  html[data-device="mobile"] .institution-logo--round img,
+  html[data-device="mobile"] .institution-logo--wide img {
+    max-height: 56px;
+  }
+
+  html[data-device="mobile"] .hero-logo-shell {
+    width: min(66vw, 218px);
+  }
+}
+
+/* v3.0.2a: explicit institutional-logo bounds for desktop/tablet.
+   Percentage max-heights are avoided because they can resolve against an
+   indefinite grid track in some browsers. */
+.institution-logo img {
+  max-height: 88px;
+}
+.institution-logo--round img,
+.institution-logo--faculty img {
+  max-height: 92px;
+}
+.institution-logo--wide img,
+.institution-logo--centennial img {
+  max-height: 76px;
+}
+
+html[data-device="tablet"] .institution-logo img {
+  max-height: 64px;
+}
+html[data-device="tablet"] .institution-logo--round img,
+html[data-device="tablet"] .institution-logo--faculty img {
+  max-height: 68px;
+}
+html[data-device="tablet"] .institution-logo--wide img,
+html[data-device="tablet"] .institution-logo--centennial img {
+  max-height: 56px;
+}
+
+/* Reassert the mobile bounds after the desktop/tablet rules above. */
+html[data-device="mobile"] .institution-logo img,
+html[data-device="mobile"] .institution-logo--round img,
+html[data-device="mobile"] .institution-logo--wide img {
+  max-height: 64px;
+}
+html[data-device="mobile"] .institution-logo--cairo img {
+  max-height: 66px;
+}
+html[data-device="mobile"] .institution-logo--centennial img {
+  max-height: 54px;
+}
+
+@media (max-width: 360px) {
+  html[data-device="mobile"] .institution-logo img,
+  html[data-device="mobile"] .institution-logo--round img,
+  html[data-device="mobile"] .institution-logo--wide img {
+    max-height: 56px;
+  }
+}
