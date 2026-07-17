@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#062a58">
+  <meta name="description" content="Computational Biophysics Workshop organized by the Scientific Culture Committee, Biophysics Department, Faculty of Science, Cairo University. One month of lectures and hands-on scientific training.">
+  <meta name="keywords" content="Computational Biophysics, Cairo University, Molecular Docking, Molecular Dynamics, DFT, Structural Bioinformatics, Workshop">
+  <meta property="og:title" content="Computational Biophysics Workshop | Cairo University">
+  <meta property="og:description" content="A one-month workshop covering structural modeling, docking, molecular dynamics, DFT, trajectory analysis, instrumentation, and wet-lab validation.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/posters/overview_en.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Computational Biophysics Workshop | Cairo University</title>
+  <link rel="icon" href="assets/images/workshop-logo.png" type="image/png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/data.js"></script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="announcement-bar">
+    <div class="container announcement-inner">
+      <p data-i18n="announcement">Registration is open for the one-month Computational Biophysics Workshop.</p>
+      <a class="announcement-link js-register-link" href="#registration" data-i18n="registerNow">Register now</a>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="institution-strip container" aria-label="Organizing institutions">
+      <figure class="institution-logo">
+        <img src="assets/images/cairo-university-logo.jpg" alt="Cairo University logo" width="180" height="180">
+      </figure>
+      <figure class="institution-logo institution-logo--round">
+        <img src="assets/images/faculty-logo.jpg" alt="Faculty of Science, Cairo University logo" width="180" height="200">
+      </figure>
+      <figure class="institution-logo">
+        <img src="assets/images/biophysics-logo.png" alt="Biophysics Department, Cairo University logo" width="180" height="206">
+      </figure>
+      <figure class="institution-logo institution-logo--wide">
+        <img src="assets/images/centennial-logo.jpg" alt="Faculty of Science centenary — Pioneers in Science" width="260" height="158">
+      </figure>
+    </div>
+
+    <nav class="main-nav" aria-label="Primary navigation">
+      <div class="container nav-inner">
+        <a class="brand" href="#top" aria-label="Computational Biophysics Workshop home">
+          <img src="assets/images/workshop-logo.png" alt="" width="58" height="58">
+          <span>
+            <strong>Computational Biophysics</strong>
+            <small data-i18n="brandWorkshop">Workshop</small>
+          </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#about" data-i18n="navAbout">About</a>
+          <a href="#program" data-i18n="navProgram">Program</a>
+          <a href="#speakers" data-i18n="navSpeakers">Presenters</a>
+          <a href="#gallery" data-i18n="navGallery">Gallery</a>
+          <a href="#registration" data-i18n="navRegistration">Registration</a>
+          <a href="#location" data-i18n="navLocation">Location</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="language-toggle" type="button" aria-label="Switch language" title="العربية">
+            <span class="language-current">AR</span>
+          </button>
+          <a class="button button--small button--gold js-register-link" href="#registration" data-i18n="register">Register</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-dark" aria-labelledby="hero-title">
+      <canvas class="molecule-canvas" aria-hidden="true"></canvas>
+      <div class="hero-orbit hero-orbit--one" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit--two" aria-hidden="true"></div>
+      <div class="hero-orbit hero-orbit--three" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="organizedBy">Scientific Culture Committee · Biophysics Department</p>
+          <h1 id="hero-title">
+            <span data-i18n="heroComputational">Computational</span>
+            <span data-i18n="heroBiophysics">Biophysics</span>
+            <em data-i18n="heroWorkshop">Workshop</em>
+          </h1>
+          <p class="hero-lead" data-i18n="heroLead">A focused, one-month scientific program connecting structural bioinformatics, molecular simulation, quantum chemistry, instrumentation, and experimental validation.</p>
+          <div class="hero-actions">
+            <a class="button button--gold button--large js-register-link" href="#registration">
+              <span data-i18n="secureSeat">Secure your seat</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="button button--ghost button--large" href="#program" data-i18n="exploreProgram">Explore the program</a>
+          </div>
+          <div class="hero-meta" aria-label="Workshop summary">
+            <div><strong>1</strong><span data-i18n="month">Month</span></div>
+            <div><strong>3</strong><span data-i18n="daysWeek">Days / week</span></div>
+            <div><strong>8</strong><span data-i18n="coreModules">Core modules</span></div>
+            <div><strong>11</strong><span data-i18n="presenters">Presenters</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal" data-delay="120">
+          <div class="hero-logo-shell">
+            <div class="hero-logo-glow" aria-hidden="true"></div>
+            <img src="assets/images/workshop-logo.png" alt="Computational Biophysics Workshop logo" width="720" height="720">
+            <span class="floating-tag floating-tag--one" data-i18n="tagDocking">Molecular docking</span>
+            <span class="floating-tag floating-tag--two" data-i18n="tagDynamics">Molecular dynamics</span>
+            <span class="floating-tag floating-tag--three" data-i18n="tagDFT">DFT & quantum chemistry</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-wave" aria-hidden="true"></div>
+    </section>
+
+    <section class="section section-light" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">A complete learning pathway</p>
+          <h2 id="about-title" data-i18n="aboutTitle">From molecular structure to validated scientific insight</h2>
+          <p data-i18n="aboutText">The workshop is designed for students and researchers who want a coherent, hands-on route through modern computational biophysics. Sessions combine scientific foundations, guided demonstrations, practical exercises, analysis workflows, and integrated project work.</p>
+          <div class="about-actions">
+            <a class="text-link" href="#speakers"><span data-i18n="meetPresenters">Meet the presenters</span><span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#gallery"><span data-i18n="viewPosters">View official posters</span><span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+
+        <div class="feature-board reveal" data-delay="120">
+          <article class="feature-card feature-card--accent">
+            <div class="feature-icon">01</div>
+            <h3 data-i18n="featureHandsOn">Hands-on scientific training</h3>
+            <p data-i18n="featureHandsOnText">Practical sessions using current computational tools and open-source software.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">02</div>
+            <h3 data-i18n="featureAudience">Built for emerging researchers</h3>
+            <p data-i18n="featureAudienceText">Suitable for students and researchers in biology, biophysics, chemistry, physics, biotechnology, and related fields.</p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">03</div>
+            <h3 data-i18n="featureIntegration">Integrated computational workflow</h3>
+            <p data-i18n="featureIntegrationText">Move from preparation and modeling to simulation, analysis, visualization, and scientific communication.</p>
+          </article>
+          <article class="feature-card feature-card--dark">
+            <div class="feature-icon">04</div>
+            <h3 data-i18n="featureLocation">On campus at Cairo University</h3>
+            <p data-i18n="featureLocationText">Hosted at the Biophysics Department, Faculty of Science, Cairo University.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section patronage-section" aria-labelledby="patronage-title">
+      <div class="container">
+        <div class="section-heading section-heading--center reveal">
+          <p class="eyebrow" data-i18n="patronageEyebrow">Institutional leadership</p>
+          <h2 id="patronage-title" data-i18n="patronageTitle">Under the patronage of</h2>
+        </div>
+        <div class="patronage-grid" id="patronage-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-program" id="program" aria-labelledby="program-title">
+      <div class="program-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow" data-i18n="programEyebrow">Workshop contents</p>
+            <h2 id="program-title" data-i18n="programTitle">Eight connected modules. One scientific workflow.</h2>
+          </div>
+          <p data-i18n="programText">The curriculum is arranged as a progression: prepare the molecular system, model interactions, simulate dynamics, analyze results, and present a defensible scientific conclusion.</p>
+        </div>
+
+        <div class="workflow-visual reveal" aria-label="Workshop workflow visualization">
+          <div class="workflow-track" aria-hidden="true"></div>
+          <div class="workflow-nodes" id="workflow-nodes"></div>
+        </div>
+        <div class="curriculum-grid" id="curriculum-grid"></div>
+
+        <div class="schedule-panel reveal">
+          <div class="schedule-intro">
+            <p class="eyebrow" data-i18n="scheduleEyebrow">Schedule at a glance</p>
+            <h3 data-i18n="scheduleTitle">Three focused days every week</h3>
+            <p data-i18n="scheduleText">The workshop runs for one month, with sessions on Saturday, Monday, and Wednesday from 09:00 to 15:00.</p>
+          </div>
+          <div class="week-grid" aria-label="Weekly schedule">
+            <div class="week-day is-active"><span data-i18n="sat">Saturday</span><strong>09:00–15:00</strong></div>
+            <div class="week-day"><span data-i18n="sun">Sunday</span><em data-i18n="noSession">No session</em></div>
+            <div class="week-day is-active"><span data-i18n="mon">Monday</span><strong>09:00–15:00</strong></div>
+            <div class="week-day"><span data-i18n="tue">Tuesday</span><em data-i18n="noSession">No session</em></div>
+            <div class="week-day is-active"><span data-i18n="wed">Wednesday</span><strong>09:00–15:00</strong></div>
+            <div class="week-day"><span data-i18n="thu">Thursday</span><em data-i18n="noSession">No session</em></div>
+            <div class="week-day"><span data-i18n="fri">Friday</span><em data-i18n="noSession">No session</em></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section speakers-section" id="speakers" aria-labelledby="speakers-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow" data-i18n="speakersEyebrow">Workshop presenters</p>
+            <h2 id="speakers-title" data-i18n="speakersTitle">Experts across the computational-to-experimental spectrum</h2>
+          </div>
+          <p data-i18n="speakersText">Explore each presenter’s lecture, expertise, affiliation, contact details, and official workshop poster.</p>
+        </div>
+
+        <div class="speaker-controls reveal" role="group" aria-label="Filter presenters">
+          <button class="filter-button is-active" type="button" data-filter="all" data-i18n="filterAll">All presenters</button>
+          <button class="filter-button" type="button" data-filter="computational" data-i18n="filterComputational">Computational</button>
+          <button class="filter-button" type="button" data-filter="practical" data-i18n="filterPractical">Practical sessions</button>
+          <button class="filter-button" type="button" data-filter="instrumentation" data-i18n="filterInstrumentation">Instrumentation</button>
+          <button class="filter-button" type="button" data-filter="experimental" data-i18n="filterExperimental">Experimental & medical</button>
+        </div>
+
+        <div class="speakers-grid" id="speakers-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark impact-section" aria-labelledby="impact-title">
+      <div class="impact-orbit" aria-hidden="true"></div>
+      <div class="container impact-grid">
+        <div class="impact-copy reveal">
+          <p class="eyebrow" data-i18n="impactEyebrow">What participants will practice</p>
+          <h2 id="impact-title" data-i18n="impactTitle">Scientific reasoning, not just software operation</h2>
+          <p data-i18n="impactText">The workshop emphasizes why each computational decision is made, how results should be checked, and how in silico findings can connect to instrumentation and wet-lab validation.</p>
+          <ul class="check-list">
+            <li data-i18n="impactOne">Prepare reproducible molecular systems and document assumptions.</li>
+            <li data-i18n="impactTwo">Interpret docking, simulation, and free-energy outputs critically.</li>
+            <li data-i18n="impactThree">Create publication-ready analyses and scientific visualizations.</li>
+            <li data-i18n="impactFour">Connect computational predictions with experimental strategy.</li>
+          </ul>
+        </div>
+        <div class="impact-diagram reveal" data-delay="120" aria-label="Integrated scientific workflow diagram">
+          <div class="diagram-core"><span>INSIGHT</span></div>
+          <div class="diagram-node diagram-node--1"><strong>01</strong><span data-i18n="diagramModel">Model</span></div>
+          <div class="diagram-node diagram-node--2"><strong>02</strong><span data-i18n="diagramSimulate">Simulate</span></div>
+          <div class="diagram-node diagram-node--3"><strong>03</strong><span data-i18n="diagramAnalyze">Analyze</span></div>
+          <div class="diagram-node diagram-node--4"><strong>04</strong><span data-i18n="diagramValidate">Validate</span></div>
+          <svg class="diagram-lines" viewBox="0 0 600 600" aria-hidden="true">
+            <circle cx="300" cy="300" r="205"/>
+            <circle cx="300" cy="300" r="125"/>
+            <path d="M300 95V220M505 300H380M300 505V380M95 300H220"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-heading section-heading--split reveal">
+          <div>
+            <p class="eyebrow" data-i18n="galleryEyebrow">Official workshop materials</p>
+            <h2 id="gallery-title" data-i18n="galleryTitle">Poster gallery</h2>
+          </div>
+          <p data-i18n="galleryText">Open any poster for a full-resolution view. The gallery includes the workshop overview in English and Arabic and the individual presenter posters.</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid"></div>
+      </div>
+    </section>
+
+    <section class="section registration-section" id="registration" aria-labelledby="registration-title">
+      <div class="container registration-shell reveal">
+        <div class="registration-copy">
+          <p class="eyebrow" data-i18n="registrationEyebrow">Registration</p>
+          <h2 id="registration-title" data-i18n="registrationTitle">Join the Computational Biophysics Workshop</h2>
+          <p data-i18n="registrationText">Complete the official Google Form to submit your registration. The QR code and the button below open the same registration form.</p>
+          <div class="registration-points">
+            <div><strong data-i18n="duration">Duration</strong><span data-i18n="oneMonth">One month</span></div>
+            <div><strong data-i18n="frequency">Frequency</strong><span data-i18n="threeDays">Three days per week</span></div>
+            <div><strong data-i18n="training">Training</strong><span data-i18n="lecturesPractical">Lectures and practical sessions</span></div>
+          </div>
+          <div class="registration-actions">
+            <a class="button button--gold button--large js-register-link" href="#" target="_blank" rel="noopener noreferrer">
+              <span data-i18n="openForm">Open registration form</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6"/></svg>
+            </a>
+            <a class="button button--outline button--large" href="mailto:dr_abdo@cu.edu.eg">
+              <span data-i18n="contactCoordinator">Contact scientific coordinator</span>
+            </a>
+          </div>
+        </div>
+        <div class="qr-card">
+          <div class="qr-frame">
+            <img src="assets/images/registration-qr.png" alt="QR code for workshop registration form" width="680" height="680" loading="lazy">
+          </div>
+          <p data-i18n="scanRegister">Scan to register</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section location-section" id="location" aria-labelledby="location-title">
+      <div class="container location-grid">
+        <div class="location-card reveal">
+          <div class="location-pin" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M12 21s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12Z"/><circle cx="12" cy="9" r="2.4"/></svg>
+          </div>
+          <p class="eyebrow" data-i18n="venueEyebrow">Venue</p>
+          <h2 id="location-title" data-i18n="venueTitle">Biophysics Department</h2>
+          <p class="location-address" data-i18n="venueAddress">Faculty of Science, Cairo University, Giza, Egypt</p>
+          <p data-i18n="venueText">Use the map button or scan the QR code for directions to the workshop venue.</p>
+          <a class="button button--navy button--large js-map-link" href="#" target="_blank" rel="noopener noreferrer">
+            <span data-i18n="openMaps">Open in Google Maps</span>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M14 5h5v5M19 5l-9 9M19 13v6H5V5h6"/></svg>
+          </a>
+        </div>
+        <div class="map-visual reveal" data-delay="120">
+          <div class="map-grid" aria-hidden="true"></div>
+          <div class="map-route" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="map-qr-card">
+            <img src="assets/images/location-qr.png" alt="QR code for workshop location on Google Maps" width="800" height="800" loading="lazy">
+            <strong data-i18n="scanDirections">Scan for directions</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="assets/images/workshop-logo.png" alt="Computational Biophysics Workshop logo" width="120" height="120">
+        <div>
+          <strong>Computational Biophysics Workshop</strong>
+          <p data-i18n="footerOrganizer">Scientific Culture Committee, Biophysics Department, Faculty of Science, Cairo University.</p>
+        </div>
+      </div>
+      <div class="footer-links">
+        <strong data-i18n="quickLinks">Quick links</strong>
+        <a href="#program" data-i18n="navProgram">Program</a>
+        <a href="#speakers" data-i18n="navSpeakers">Presenters</a>
+        <a href="#registration" data-i18n="navRegistration">Registration</a>
+        <a href="#location" data-i18n="navLocation">Location</a>
+      </div>
+      <div class="footer-contact">
+        <strong data-i18n="scientificCoordination">Scientific coordination</strong>
+        <a href="mailto:dr_abdo@cu.edu.eg">dr_abdo@cu.edu.eg</a>
+        <p data-i18n="footerVenue">Biophysics Department, Faculty of Science, Cairo University.</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span id="year"></span> <span data-i18n="copyright">Computational Biophysics Workshop. All rights reserved.</span></p>
+      <a href="#top" data-i18n="backTop">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <a class="floating-register js-register-link" href="#registration" aria-label="Register for the workshop">
+    <span data-i18n="register">Register</span>
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+  </a>
+
+  <dialog class="speaker-modal" id="speaker-modal" aria-labelledby="speaker-modal-name">
+    <button class="modal-close" type="button" aria-label="Close presenter details">×</button>
+    <div class="speaker-modal-grid">
+      <div class="speaker-modal-poster">
+        <img id="speaker-modal-poster" src="" alt="" width="1000" height="1400">
+      </div>
+      <div class="speaker-modal-content">
+        <p class="eyebrow" id="speaker-modal-category"></p>
+        <h2 id="speaker-modal-name"></h2>
+        <p class="speaker-modal-role" id="speaker-modal-role"></p>
+        <p class="speaker-modal-affiliation" id="speaker-modal-affiliation"></p>
+        <div class="speaker-modal-lecture">
+          <span data-i18n="lectureTitle">Lecture title</span>
+          <h3 id="speaker-modal-lecture"></h3>
+        </div>
+        <p id="speaker-modal-bio"></p>
+        <a class="speaker-modal-email" id="speaker-modal-email" href=""></a>
+        <a class="button button--navy" id="speaker-modal-poster-link" href="" target="_blank" rel="noopener noreferrer" data-i18n="openPoster">Open full poster</a>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Poster viewer">
+    <button class="modal-close lightbox-close" type="button" aria-label="Close poster viewer">×</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous poster">‹</button>
+    <figure>
+      <img id="lightbox-image" src="" alt="" width="1100" height="1500">
+      <figcaption id="lightbox-caption"></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next poster">›</button>
+  </dialog>
+
+  <noscript>
+    <div class="noscript-message">This website uses JavaScript to display presenter details and the poster gallery. Registration remains available at the official Google Form.</div>
+  </noscript>
+</body>
+</html>
