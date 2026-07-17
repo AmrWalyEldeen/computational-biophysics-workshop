@@ -1208,3 +1208,465 @@ body { overflow-x: hidden; }
   .hero-logo-shell { width: min(100%, 390px); }
   .hero h1 > span { font-size: clamp(3rem, 8vw, 4rem); }
 }
+
+/* =========================================================
+   Adaptive device layer v3.0
+   Device state is set by assets/js/device.js before first paint.
+   CSS media queries remain as a no-JavaScript fallback.
+   ========================================================= */
+
+:root {
+  --viewport-width: 100vw;
+  --viewport-height: 100vh;
+}
+
+html.device-ready body {
+  min-height: var(--viewport-height);
+}
+
+/* Every raster image keeps its intrinsic proportions. */
+img {
+  max-width: 100%;
+}
+
+.institution-logo img,
+.brand img,
+.hero-logo-shell > img,
+.speaker-photo,
+.gallery-item img,
+.qr-frame img,
+.map-qr-card img,
+.footer-brand img {
+  object-fit: contain;
+}
+
+/* Desktop: editorial two-column hero and full scientific visualisation. */
+html[data-device="desktop"] .hero-grid {
+  grid-template-columns: minmax(0, 1.08fr) minmax(390px, .92fr);
+  gap: clamp(34px, 4vw, 70px);
+}
+
+html[data-device="desktop"] .hero-copy {
+  text-align: start;
+}
+
+html[data-device="desktop"] .hero h1 > span {
+  font-size: clamp(3.6rem, 5.25vw, 6.3rem);
+}
+
+html[data-device="desktop"] .hero-visual {
+  min-height: clamp(470px, 42vw, 590px);
+}
+
+html[data-device="desktop"] .hero-logo-shell {
+  width: min(100%, 530px);
+}
+
+html[data-device="desktop"] .speakers-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+html[data-device="desktop"] .gallery-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Tablet: stacked hero, two-column content and reduced decoration. */
+html[data-device="tablet"] .hero {
+  min-height: auto;
+  padding: 64px 0 112px;
+}
+
+html[data-device="tablet"] .hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 26px;
+}
+
+html[data-device="tablet"] .hero-copy {
+  text-align: center;
+}
+
+html[data-device="tablet"] .hero-visual {
+  order: -1;
+  min-height: 350px;
+}
+
+html[data-device="tablet"] .hero-logo-shell {
+  width: min(100%, 370px);
+}
+
+html[data-device="tablet"] .hero h1 > span {
+  font-size: clamp(3.2rem, 8.1vw, 4.5rem);
+}
+
+html[data-device="tablet"] .hero-lead {
+  margin-inline: auto;
+}
+
+html[data-device="tablet"] .hero-actions {
+  justify-content: center;
+}
+
+html[data-device="tablet"] .hero-orbit--two,
+html[data-device="tablet"] .hero-orbit--three {
+  display: none;
+}
+
+html[data-device="tablet"] .floating-tag {
+  transform: scale(.9);
+}
+
+html[data-device="tablet"] .about-grid,
+html[data-device="tablet"] .impact-grid,
+html[data-device="tablet"] .location-grid,
+html[data-device="tablet"] .registration-shell {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="tablet"] .patronage-grid,
+html[data-device="tablet"] .curriculum-grid,
+html[data-device="tablet"] .speakers-grid,
+html[data-device="tablet"] .gallery-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+html[data-device="tablet"] .gallery-item,
+html[data-device="tablet"] .gallery-item:nth-child(1),
+html[data-device="tablet"] .gallery-item:nth-child(2) {
+  grid-column: span 1;
+  min-height: 0;
+  aspect-ratio: 5 / 7;
+}
+
+html[data-device="tablet"] .gallery-item img {
+  object-fit: contain;
+  background: #fff;
+}
+
+html[data-device="tablet"] .qr-card {
+  max-width: 300px;
+  margin-inline: auto;
+}
+
+/* Mobile: compact, touch-first, single-column visualisation. */
+html[data-device="mobile"] .announcement-inner {
+  min-height: 42px;
+  font-size: .72rem;
+}
+
+html[data-device="mobile"] .institution-strip {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  min-height: 78px;
+  gap: 5px;
+  padding-block: 9px;
+}
+
+html[data-device="mobile"] .institution-logo {
+  width: 100%;
+  height: 54px;
+  padding: 2px;
+}
+
+html[data-device="mobile"] .institution-logo img,
+html[data-device="mobile"] .institution-logo--round img,
+html[data-device="mobile"] .institution-logo--wide img {
+  width: 100%;
+  height: 100% !important;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+html[data-device="mobile"] .nav-inner {
+  min-height: 62px;
+}
+
+html[data-device="mobile"] .brand img {
+  width: 42px;
+  height: 42px;
+}
+
+html[data-device="mobile"] .brand strong {
+  font-size: .78rem;
+}
+
+html[data-device="mobile"] .brand small {
+  font-size: .52rem;
+}
+
+html[data-device="mobile"] .hero {
+  min-height: auto;
+  padding: 36px 0 88px;
+}
+
+html[data-device="mobile"] .hero-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+}
+
+html[data-device="mobile"] .hero-copy {
+  text-align: center;
+}
+
+html[data-device="mobile"] .hero-visual {
+  order: -1;
+  min-height: 220px;
+}
+
+html[data-device="mobile"] .hero-logo-shell {
+  width: min(72vw, 250px);
+}
+
+html[data-device="mobile"] .hero-logo-shell > img {
+  width: 92%;
+}
+
+html[data-device="mobile"] .molecule-canvas,
+html[data-device="mobile"] .hero-orbit,
+html[data-device="mobile"] .floating-tag {
+  display: none;
+}
+
+html[data-device="mobile"] .hero h1 {
+  margin: 12px 0 18px;
+  line-height: .98;
+  overflow: visible;
+}
+
+html[data-device="mobile"] .hero h1 > span {
+  font-size: clamp(2rem, 11.2vw, 3.15rem);
+  overflow-wrap: anywhere;
+}
+
+html[data-device="mobile"] .hero h1 em {
+  margin-top: 13px;
+  font-size: clamp(.73rem, 3.7vw, .95rem);
+  letter-spacing: .17em;
+}
+
+html[data-device="mobile"] .hero-lead {
+  max-width: 38rem;
+  margin-inline: auto;
+  font-size: .96rem;
+}
+
+html[data-device="mobile"] .hero-actions,
+html[data-device="mobile"] .registration-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  width: 100%;
+}
+
+html[data-device="mobile"] .hero-actions .button,
+html[data-device="mobile"] .registration-actions .button {
+  width: 100%;
+}
+
+html[data-device="mobile"] .hero-meta {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 30px;
+}
+
+html[data-device="mobile"] .hero-meta div {
+  padding: 14px 8px;
+}
+
+html[data-device="mobile"] .section {
+  padding: 62px 0;
+}
+
+html[data-device="mobile"] .about-grid,
+html[data-device="mobile"] .impact-grid,
+html[data-device="mobile"] .location-grid,
+html[data-device="mobile"] .registration-shell,
+html[data-device="mobile"] .section-heading--split,
+html[data-device="mobile"] .schedule-panel,
+html[data-device="mobile"] .speaker-modal-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="mobile"] .feature-board,
+html[data-device="mobile"] .patronage-grid,
+html[data-device="mobile"] .curriculum-grid,
+html[data-device="mobile"] .speakers-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="mobile"] .workflow-visual {
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scrollbar-width: thin;
+}
+
+html[data-device="mobile"] .workflow-nodes {
+  width: max-content;
+  min-width: 100%;
+  grid-template-columns: repeat(8, 116px);
+  gap: 10px;
+  padding-inline: 6px;
+}
+
+html[data-device="mobile"] .workflow-track {
+  display: none;
+}
+
+html[data-device="mobile"] .speaker-card {
+  min-height: 0;
+}
+
+html[data-device="mobile"] .speaker-photo-wrap {
+  min-height: 280px;
+}
+
+html[data-device="mobile"] .speaker-photo {
+  object-fit: cover;
+  object-position: center top;
+}
+
+html[data-device="mobile"] .speaker-role {
+  min-height: 0;
+}
+
+html[data-device="mobile"] .gallery-grid {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-inline: contain;
+  padding: 3px 2px 16px;
+  scrollbar-width: thin;
+}
+
+html[data-device="mobile"] .gallery-item,
+html[data-device="mobile"] .gallery-item:nth-child(1),
+html[data-device="mobile"] .gallery-item:nth-child(2) {
+  flex: 0 0 min(82vw, 345px);
+  min-height: 0;
+  aspect-ratio: 5 / 7;
+  scroll-snap-align: center;
+}
+
+html[data-device="mobile"] .gallery-item img {
+  object-fit: contain;
+  background: #fff;
+}
+
+html[data-device="mobile"] .registration-shell {
+  padding: 22px;
+  gap: 30px;
+  border-radius: 24px;
+}
+
+html[data-device="mobile"] .registration-copy h2 {
+  font-size: clamp(1.9rem, 9.8vw, 2.65rem);
+}
+
+html[data-device="mobile"] .registration-points {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="mobile"] .qr-card {
+  width: min(100%, 260px);
+  margin-inline: auto;
+}
+
+html[data-device="mobile"] .qr-frame {
+  padding: 12px;
+  border-radius: 20px;
+}
+
+html[data-device="mobile"] .location-card {
+  padding: 30px 22px;
+}
+
+html[data-device="mobile"] .map-visual {
+  min-height: 360px;
+}
+
+html[data-device="mobile"] .map-qr-card {
+  width: min(48vw, 180px);
+  inset-inline-end: 14px;
+  bottom: 14px;
+}
+
+html[data-device="mobile"] .floating-register {
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  justify-content: center;
+  width: auto;
+  min-height: 52px;
+}
+
+html[data-device="mobile"][dir="rtl"] .floating-register {
+  left: 12px;
+  right: 12px;
+}
+
+/* Touch devices do not depend on hover-only cues. */
+html[data-input="touch"] .speaker-card:hover,
+html[data-input="touch"] .gallery-item:hover img {
+  transform: none;
+}
+
+html[data-input="touch"] .gallery-zoom {
+  opacity: .95;
+}
+
+/* Landscape phones: use horizontal space without restoring desktop scale. */
+html[data-device="mobile"][data-orientation="landscape"] .hero-grid {
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+}
+
+html[data-device="mobile"][data-orientation="landscape"] .hero-visual {
+  order: 0;
+  min-height: 210px;
+}
+
+html[data-device="mobile"][data-orientation="landscape"] .hero-logo-shell {
+  width: min(34vw, 230px);
+}
+
+html[data-device="mobile"][data-orientation="landscape"] .hero h1 > span {
+  font-size: clamp(1.85rem, 6.5vw, 2.7rem);
+}
+
+html[data-device="mobile"][data-orientation="landscape"] .hero-lead {
+  font-size: .88rem;
+}
+
+/* Fallbacks when JavaScript is unavailable. */
+@media (max-width: 767px) {
+  html:not(.device-ready) .hero-grid { grid-template-columns: 1fr; }
+  html:not(.device-ready) .hero-visual { order: -1; }
+  html:not(.device-ready) .molecule-canvas,
+  html:not(.device-ready) .hero-orbit,
+  html:not(.device-ready) .floating-tag { display: none; }
+}
+
+/* v3.0.1 finishing safeguards */
+html,
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.hero,
+.map-visual {
+  contain: paint;
+}
+
+.hero-wave {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+html[data-device="tablet"] .floating-tag {
+  display: none;
+}
+
+html[data-device="mobile"] .hero h1 > span {
+  font-size: clamp(1.78rem, 8.5vw, 2.35rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}

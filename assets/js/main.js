@@ -377,20 +377,41 @@
   function initMoleculeCanvas() {
     const canvas = $('.molecule-canvas');
     if (!canvas || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
     const ctx = canvas.getContext('2d');
     let width = 0;
     let height = 0;
     let particles = [];
     let raf = 0;
+    let running = false;
+
+    const device = () => document.documentElement.dataset.device || 'desktop';
+
+    const stop = () => {
+      running = false;
+      cancelAnimationFrame(raf);
+      ctx.clearRect(0, 0, width, height);
+    };
 
     const resize = () => {
+      if (device() === 'mobile') {
+        canvas.setAttribute('aria-hidden', 'true');
+        stop();
+        return;
+      }
+
       const dpr = Math.min(window.devicePixelRatio || 1, 2);
       width = canvas.clientWidth;
       height = canvas.clientHeight;
       canvas.width = Math.round(width * dpr);
       canvas.height = Math.round(height * dpr);
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      const count = Math.min(72, Math.max(32, Math.floor(width / 22)));
+
+      const divisor = device() === 'tablet' ? 34 : 22;
+      const maximum = device() === 'tablet' ? 44 : 72;
+      const minimum = device() === 'tablet' ? 22 : 32;
+      const count = Math.min(maximum, Math.max(minimum, Math.floor(width / divisor)));
+
       particles = Array.from({ length: count }, (_, index) => ({
         x: Math.random() * width,
         y: Math.random() * height,
@@ -402,7 +423,9 @@
     };
 
     const draw = () => {
+      if (!running || device() === 'mobile') return;
       ctx.clearRect(0, 0, width, height);
+
       particles.forEach(p => {
         p.x += p.vx;
         p.y += p.vy;
@@ -411,6 +434,7 @@
         if (p.y < -20) p.y = height + 20;
         if (p.y > height + 20) p.y = -20;
       });
+
       for (let i = 0; i < particles.length; i++) {
         for (let j = i + 1; j < particles.length; j++) {
           const a = particles[i];
@@ -428,21 +452,35 @@
           }
         }
       }
+
       particles.forEach(p => {
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fillStyle = p.gold ? 'rgba(239,208,138,.75)' : 'rgba(212,232,255,.65)';
         ctx.fill();
       });
+
       raf = requestAnimationFrame(draw);
     };
 
-    resize();
-    draw();
+    const start = () => {
+      if (device() === 'mobile' || document.hidden) {
+        stop();
+        return;
+      }
+      resize();
+      if (!running) {
+        running = true;
+        draw();
+      }
+    };
+
+    start();
+    window.addEventListener('devicechange', start);
     window.addEventListener('resize', resize, { passive: true });
     document.addEventListener('visibilitychange', () => {
-      if (document.hidden) cancelAnimationFrame(raf);
-      else draw();
+      if (document.hidden) stop();
+      else start();
     });
   }
 
