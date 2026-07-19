@@ -1,9 +1,17 @@
-# Update to v3.0.2
+# GitHub update instructions — Version 3.0.4
 
-Upload these items to the root of the GitHub repository and allow GitHub to replace the existing versions:
+Upload these items to the root of the existing GitHub repository:
 
 - `index.html`
 - `assets/css/styles.css`
-- `assets/js/device.js`
+- `assets/js/main.js`
+- `assets/video/workshop-introduction.mp4`
+- `assets/video/workshop-video-poster.jpg`
 
-After committing, wait for GitHub Pages to deploy and force-refresh the website with `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.
+The easiest method is to upload the included `index.html` and complete `assets` folder and allow GitHub to replace matching files.
+
+Suggested commit message:
+
+`Add responsive workshop introduction video`
+
+After GitHub Pages finishes deploying, force-refresh the website with `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.

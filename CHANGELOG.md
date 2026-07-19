@@ -1,16 +1,10 @@
 # Changelog
 
-## 3.0.2 — Layout integrity update
+## Version 3.0.4 — Workshop video
 
-- Dynamically fits the two long hero-title words to the real width of the text column.
-- Prevents the desktop heading from entering the workshop-logo column.
-- Preserves intrinsic image aspect ratios throughout the hero and institutional header.
-- Changes the institutional logo strip to a complete 2×2 mobile layout on narrow phones.
-- Removes fixed-height image clipping from the four institutional logos.
-- Improves the mobile announcement bar and workshop-logo scale.
-
-## 3.0.1 — Adaptive device update
-
-- Added mobile, tablet and desktop device classification.
-- Added orientation and input-mode attributes.
-- Added touch-first mobile content layouts.
+- Added the supplied 30-second workshop introduction video.
+- Optimized the video from about 17 MB to about 3.7 MB for faster GitHub Pages delivery.
+- Added a responsive 16:9 video player with controls, poster image, and mobile `playsinline` behavior.
+- Added English and Arabic video-section content.
+- Added a direct link to the video section from the workshop overview.
+- Preserved the August 2026 start notice and all presenter updates from Version 3.0.3.

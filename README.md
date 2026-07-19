@@ -72,3 +72,8 @@ Then open `http://localhost:8000` in a browser.
 ## Adaptive device rendering
 
 Version 3 classifies the live viewport as `mobile`, `tablet`, or `desktop` in `assets/js/device.js`. The result is written to the `<html>` element as `data-device`, together with `data-orientation` and `data-input`. The stylesheet uses these values to switch layouts without user-agent sniffing. Media-query fallbacks remain active when JavaScript is unavailable.
+
+
+## Workshop video
+
+The responsive video player uses `assets/video/workshop-introduction.mp4` and `assets/video/workshop-video-poster.jpg`. Replace both files with the same filenames to update the video without changing HTML.
