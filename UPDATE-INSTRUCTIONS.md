@@ -1,17 +1,39 @@
-# GitHub update instructions — Version 3.0.4
+# Update instructions — Version 3.0.5
 
-Upload these items to the root of the existing GitHub repository:
+## Uploading this update to GitHub
 
-- `index.html`
-- `assets/css/styles.css`
-- `assets/js/main.js`
-- `assets/video/workshop-introduction.mp4`
-- `assets/video/workshop-video-poster.jpg`
+1. Open the repository:
+   `AmrWalyEldeen/computational-biophysics-workshop`
+2. Select **Add file → Upload files**.
+3. Upload the contents of the update package, not the ZIP file.
+4. Allow GitHub to replace the existing files.
+5. Use the commit message:
+   `Close registration and add Day 1 gallery and attendance`
+6. Wait 1–3 minutes for GitHub Pages to deploy.
+7. Force-refresh the website:
+   - Windows: `Ctrl + F5`
+   - macOS: `Cmd + Shift + R`
 
-The easiest method is to upload the included `index.html` and complete `assets` folder and allow GitHub to replace matching files.
+## Day 1 program PDF
 
-Suggested commit message:
+The PDF was not included with the supplied files. The website is already prepared for it.
 
-`Add responsive workshop introduction video`
+Upload the PDF to this exact repository path and filename:
 
-After GitHub Pages finishes deploying, force-refresh the website with `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.
+`assets/documents/day-1-program.pdf`
+
+The Day 1 program download button will automatically appear; no HTML or JavaScript editing is required.
+
+## Day 1 gallery
+
+The gallery source images are stored in:
+
+`assets/day1/`
+
+The page displays six images and reshuffles them automatically every 10 seconds.
+
+## Attendance form
+
+The attendance form and QR code use:
+
+`https://forms.gle/hbZJExKjhhXJ5MBY7`

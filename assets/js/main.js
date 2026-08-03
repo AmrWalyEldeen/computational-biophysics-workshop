@@ -6,20 +6,28 @@
 
   const translations = {
     en: {
-      announcement: 'Registration is open — the one-month Computational Biophysics Workshop begins in August 2026.',
-      registerNow: 'Register now', brandWorkshop: 'Workshop', navAbout: 'About', navProgram: 'Program',
-      navSpeakers: 'Presenters', navGallery: 'Gallery', navRegistration: 'Registration', navLocation: 'Location', register: 'Register',
+      announcement: 'Registration is closed. Day 1 has been completed — participants can now record their attendance.',
+      registerNow: 'Record attendance', brandWorkshop: 'Workshop', navAbout: 'About', navProgram: 'Program',
+      navSpeakers: 'Presenters', navGallery: 'Day 1 gallery', navRegistration: 'Attendance', navLocation: 'Location', register: 'Attendance',
       organizedBy: 'Scientific Culture Committee · Biophysics Department', heroComputational: 'Computational', heroBiophysics: 'Biophysics', heroWorkshop: 'Workshop',
-      heroLead: 'Beginning in August 2026, this focused one-month scientific program connects structural bioinformatics, molecular simulation, quantum chemistry, instrumentation, and experimental validation.',
-      secureSeat: 'Secure your seat', exploreProgram: 'Explore the program', month: 'Month', daysWeek: 'Days / week', coreModules: 'Core modules', presenters: 'Presenters',
+      heroLead: 'The Computational Biophysics Workshop is now underway. Day 1 has been completed, bringing together lectures, scientific discussion, and practical training.',
+      secureSeat: 'Record your attendance', exploreProgram: 'Explore the program', month: 'Day 1 complete', daysWeek: 'Days / week', coreModules: 'Core modules', presenters: 'Presenters',
       tagDocking: 'Molecular docking', tagDynamics: 'Molecular dynamics', tagDFT: 'DFT & quantum chemistry',
       aboutEyebrow: 'A complete learning pathway', aboutTitle: 'From molecular structure to validated scientific insight',
       aboutText: 'The workshop is designed for students and researchers who want a coherent, hands-on route through modern computational biophysics. Sessions combine scientific foundations, guided demonstrations, practical exercises, analysis workflows, and integrated project work.',
       watchVideo: 'Watch the workshop video', meetPresenters: 'Meet the presenters', viewPosters: 'View official posters',
       videoEyebrow: 'Workshop introduction', videoTitle: 'See what the Computational Biophysics Workshop is about',
-      videoText: 'Watch this short introduction to the workshop identity, scientific scope, and hands-on learning experience. The workshop begins in August 2026.',
-      videoDuration: '30-second introduction', videoResponsive: 'Optimized for mobile and desktop', registerAfterVideo: 'Register for the August workshop',
+      videoText: 'Watch this short introduction to the workshop identity, scientific scope, and hands-on learning experience. The workshop is now underway and Day 1 is complete.',
+      videoDuration: '30-second introduction', videoResponsive: 'Optimized for mobile and desktop', registerAfterVideo: 'Record Day 1 attendance',
       videoCaption: 'Computational Biophysics Workshop · Faculty of Science, Cairo University',
+      dayOneEyebrow: 'Workshop update', dayOneStatus: 'Day 1 completed', dayOneTitle: 'The workshop is officially underway',
+      dayOneText: 'The first day brought participants together for lectures, scientific discussion, and practical perspectives in computational biophysics.',
+      attendanceButton: 'Record your attendance', downloadDayOneProgram: 'Download Day 1 program PDF', programPdfPending: 'The Day 1 program PDF will appear here when the file is uploaded.',
+      dayOneGalleryEyebrow: 'Day 1 highlights', dayOneGalleryTitle: 'Workshop moments from the first day',
+      dayOneGalleryText: 'Six photographs are displayed at a time and automatically reshuffle every 10 seconds. Open any photograph for a larger view.',
+      shuffleStatus: 'Showing 6 photos · reshuffles every 10 seconds', shuffleNow: 'Shuffle now',
+      registrationStatusLabel: 'Registration', registrationClosed: 'Closed', workshopStatusLabel: 'Workshop status', inProgress: 'In progress',
+      completedLabel: 'Completed', firstDay: 'First day', attendanceFor: 'Attendance for', dayOne: 'Day 1', formType: 'Form', presenceRecord: 'Presence record',
       featureHandsOn: 'Hands-on scientific training', featureHandsOnText: 'Practical sessions using current computational tools and open-source software.',
       featureAudience: 'Built for emerging researchers', featureAudienceText: 'Suitable for students and researchers in biology, biophysics, chemistry, physics, biotechnology, and related fields.',
       featureIntegration: 'Integrated computational workflow', featureIntegrationText: 'Move from preparation and modeling to simulation, analysis, visualization, and scientific communication.',
@@ -27,7 +35,7 @@
       patronageEyebrow: 'Institutional leadership', patronageTitle: 'Under the patronage of',
       programEyebrow: 'Workshop contents', programTitle: 'Eight connected modules. One scientific workflow.',
       programText: 'The curriculum is arranged as a progression: prepare the molecular system, model interactions, simulate dynamics, analyze results, and present a defensible scientific conclusion.',
-      scheduleEyebrow: 'Schedule at a glance', scheduleTitle: 'Three focused days every week', scheduleText: 'The workshop begins in August 2026 and runs for one month, with sessions on Saturday, Monday, and Wednesday from 09:00 to 15:00.',
+      scheduleEyebrow: 'Schedule at a glance', scheduleTitle: 'Three focused days every week', scheduleText: 'Day 1 has been completed. The workshop continues through August 2026, with sessions on Saturday, Monday, and Wednesday from 09:00 to 15:00.',
       sat: 'Saturday', sun: 'Sunday', mon: 'Monday', tue: 'Tuesday', wed: 'Wednesday', thu: 'Thursday', fri: 'Friday', noSession: 'No session',
       speakersEyebrow: 'Workshop presenters', speakersTitle: 'Experts across the computational-to-experimental spectrum', speakersText: 'Explore each presenter’s lecture, expertise, affiliation, contact details, and official workshop poster.',
       filterAll: 'All presenters', filterComputational: 'Computational', filterPractical: 'Practical sessions', filterInstrumentation: 'Instrumentation', filterExperimental: 'Experimental & medical',
@@ -36,29 +44,37 @@
       impactOne: 'Prepare reproducible molecular systems and document assumptions.', impactTwo: 'Interpret docking, simulation, and free-energy outputs critically.',
       impactThree: 'Create publication-ready analyses and scientific visualizations.', impactFour: 'Connect computational predictions with experimental strategy.',
       diagramModel: 'Model', diagramSimulate: 'Simulate', diagramAnalyze: 'Analyze', diagramValidate: 'Validate',
-      galleryEyebrow: 'Official workshop materials', galleryTitle: 'Poster gallery', galleryText: 'Open any poster for a full-resolution view. The gallery includes the workshop overview in English and Arabic and the individual presenter posters.',
-      registrationEyebrow: 'Registration', registrationTitle: 'Join the Computational Biophysics Workshop', registrationText: 'The workshop begins in August 2026. Complete the official Google Form to submit your registration; the QR code and button open the same form.',
-      start: 'Start', august2026: 'August 2026', startsAugust: 'Begins in August 2026', duration: 'Duration', oneMonth: 'One month', frequency: 'Frequency', threeDays: 'Three days per week', training: 'Training', lecturesPractical: 'Lectures and practical sessions',
-      openForm: 'Open registration form', contactCoordinator: 'Contact scientific coordinator', scanRegister: 'Scan to register',
+      galleryEyebrow: 'Official workshop materials', galleryTitle: 'Official poster gallery', galleryText: 'Open any official poster for a full-resolution view. This gallery includes the workshop overview and presenter posters.',
+      registrationEyebrow: 'Attendance', registrationTitle: 'Record your Day 1 attendance', registrationText: 'Workshop registration is now closed. Participants who attended the first day can record their presence using the official attendance form.',
+      start: 'Start', august2026: 'August 2026', startsAugust: 'Workshop underway · Day 1 completed', duration: 'Duration', oneMonth: 'One month', frequency: 'Frequency', threeDays: 'Three days per week', training: 'Training', lecturesPractical: 'Lectures and practical sessions',
+      openForm: 'Open attendance form', contactCoordinator: 'Contact scientific coordinator', scanRegister: 'Scan to record attendance',
       venueEyebrow: 'Venue', venueTitle: 'Biophysics Department', venueAddress: 'Faculty of Science, Cairo University, Giza, Egypt', venueText: 'Use the map button or scan the QR code for directions to the workshop venue.', openMaps: 'Open in Google Maps', scanDirections: 'Scan for directions',
       footerOrganizer: 'Scientific Culture Committee, Biophysics Department, Faculty of Science, Cairo University.', quickLinks: 'Quick links', scientificCoordination: 'Scientific coordination', footerVenue: 'Biophysics Department, Faculty of Science, Cairo University.', copyright: 'Computational Biophysics Workshop. All rights reserved.', backTop: 'Back to top ↑',
       lectureTitle: 'Lecture title', openPoster: 'Open full poster', viewDetails: 'View details', poster: 'Poster', email: 'Email'
     },
     ar: {
-      announcement: 'التسجيل متاح الآن — تبدأ ورشة الفيزياء الحيوية الحاسوبية في أغسطس 2026 وتستمر لمدة شهر.',
-      registerNow: 'سجّل الآن', brandWorkshop: 'ورشة عمل', navAbout: 'عن الورشة', navProgram: 'المحتوى',
-      navSpeakers: 'المحاضرون', navGallery: 'الملصقات', navRegistration: 'التسجيل', navLocation: 'الموقع', register: 'التسجيل',
+      announcement: 'أُغلق التسجيل، وتم الانتهاء من اليوم الأول — يمكن للمشاركين الآن تسجيل الحضور.',
+      registerNow: 'تسجيل الحضور', brandWorkshop: 'ورشة عمل', navAbout: 'عن الورشة', navProgram: 'المحتوى',
+      navSpeakers: 'المحاضرون', navGallery: 'صور اليوم الأول', navRegistration: 'الحضور', navLocation: 'الموقع', register: 'الحضور',
       organizedBy: 'لجنة الثقافة العلمية · قسم الفيزياء الحيوية', heroComputational: 'الفيزياء الحيوية', heroBiophysics: 'الحاسوبية', heroWorkshop: 'ورشة عمل',
-      heroLead: 'يبدأ في أغسطس 2026 برنامج علمي مكثف لمدة شهر يربط بين المعلوماتية الحيوية البنيوية والمحاكاة الجزيئية والكيمياء الكمية والأجهزة العلمية والتحقق المعملي.',
-      secureSeat: 'احجز مكانك', exploreProgram: 'استكشف المحتوى', month: 'شهر', daysWeek: 'أيام أسبوعيًا', coreModules: 'محاور رئيسية', presenters: 'محاضرًا',
+      heroLead: 'بدأت ورشة الفيزياء الحيوية الحاسوبية بالفعل، وتم الانتهاء من اليوم الأول الذي جمع بين المحاضرات والنقاش العلمي والتدريب العملي.',
+      secureSeat: 'سجّل حضورك', exploreProgram: 'استكشف المحتوى', month: 'اكتمل اليوم الأول', daysWeek: 'أيام أسبوعيًا', coreModules: 'محاور رئيسية', presenters: 'محاضرًا',
       tagDocking: 'الالتحام الجزيئي', tagDynamics: 'الديناميكا الجزيئية', tagDFT: 'الكيمياء الكمية وDFT',
       aboutEyebrow: 'مسار تعليمي متكامل', aboutTitle: 'من البنية الجزيئية إلى استنتاج علمي موثوق',
       aboutText: 'صُممت الورشة للطلاب والباحثين الراغبين في مسار عملي مترابط داخل الفيزياء الحيوية الحاسوبية الحديثة. تجمع الجلسات بين الأسس العلمية والعروض الموجهة والتطبيقات العملية وتحليل النتائج والمشروع المتكامل.',
       watchVideo: 'شاهد فيديو الورشة', meetPresenters: 'تعرّف على المحاضرين', viewPosters: 'شاهد الملصقات الرسمية',
       videoEyebrow: 'فيديو تعريفي بالورشة', videoTitle: 'تعرّف على ورشة الفيزياء الحيوية الحاسوبية',
-      videoText: 'شاهد هذا الفيديو التعريفي القصير للتعرف على هوية الورشة ونطاقها العلمي وتجربة التدريب العملي. تبدأ الورشة في أغسطس 2026.',
-      videoDuration: 'فيديو تعريفي مدته 30 ثانية', videoResponsive: 'محسّن للهواتف وأجهزة الحاسوب', registerAfterVideo: 'سجّل في ورشة أغسطس',
+      videoText: 'شاهد هذا الفيديو التعريفي القصير للتعرف على هوية الورشة ونطاقها العلمي وتجربة التدريب العملي. بدأت الورشة بالفعل واكتمل اليوم الأول.',
+      videoDuration: 'فيديو تعريفي مدته 30 ثانية', videoResponsive: 'محسّن للهواتف وأجهزة الحاسوب', registerAfterVideo: 'تسجيل حضور اليوم الأول',
       videoCaption: 'ورشة الفيزياء الحيوية الحاسوبية · كلية العلوم، جامعة القاهرة',
+      dayOneEyebrow: 'تحديث الورشة', dayOneStatus: 'اكتمل اليوم الأول', dayOneTitle: 'بدأت الورشة رسميًا',
+      dayOneText: 'جمع اليوم الأول المشاركين في محاضرات ونقاشات علمية وتطبيقات عملية في الفيزياء الحيوية الحاسوبية.',
+      attendanceButton: 'تسجيل الحضور', downloadDayOneProgram: 'تحميل برنامج اليوم الأول PDF', programPdfPending: 'سيظهر ملف برنامج اليوم الأول هنا بعد رفعه.',
+      dayOneGalleryEyebrow: 'أبرز لحظات اليوم الأول', dayOneGalleryTitle: 'صور من فعاليات اليوم الأول',
+      dayOneGalleryText: 'تُعرض ست صور في كل مرة ويُعاد ترتيبها تلقائيًا كل 10 ثوانٍ. افتح أي صورة لعرضها بحجم أكبر.',
+      shuffleStatus: 'عرض 6 صور · إعادة ترتيب كل 10 ثوانٍ', shuffleNow: 'إعادة الترتيب الآن',
+      registrationStatusLabel: 'التسجيل', registrationClosed: 'مغلق', workshopStatusLabel: 'حالة الورشة', inProgress: 'مستمرة',
+      completedLabel: 'تم الانتهاء من', firstDay: 'اليوم الأول', attendanceFor: 'الحضور', dayOne: 'اليوم الأول', formType: 'النموذج', presenceRecord: 'تسجيل الحضور',
       featureHandsOn: 'تدريب علمي عملي', featureHandsOnText: 'جلسات تطبيقية باستخدام أدوات حاسوبية حديثة وبرامج مفتوحة المصدر.',
       featureAudience: 'مصممة للباحثين في بداية مسيرتهم', featureAudienceText: 'مناسبة للطلاب والباحثين في الأحياء والفيزياء الحيوية والكيمياء والفيزياء والتكنولوجيا الحيوية والتخصصات المرتبطة.',
       featureIntegration: 'سير عمل حاسوبي متكامل', featureIntegrationText: 'انتقل من التحضير والنمذجة إلى المحاكاة والتحليل والتصور العلمي وعرض النتائج.',
@@ -66,7 +82,7 @@
       patronageEyebrow: 'القيادات الأكاديمية', patronageTitle: 'تحت رعاية',
       programEyebrow: 'محتوى الورشة', programTitle: 'ثمانية محاور مترابطة في سير عمل علمي واحد',
       programText: 'يُقدَّم المحتوى كمسار تدريجي يبدأ بتحضير النظام الجزيئي، ثم نمذجة التفاعلات، وإجراء المحاكاة، وتحليل النتائج، وانتهاءً بتقديم استنتاج علمي قابل للدفاع عنه.',
-      scheduleEyebrow: 'نظرة سريعة على المواعيد', scheduleTitle: 'ثلاثة أيام مكثفة كل أسبوع', scheduleText: 'تبدأ الورشة في أغسطس 2026 وتستمر لمدة شهر، وتُعقد الجلسات أيام السبت والاثنين والأربعاء من الساعة 09:00 إلى 15:00.',
+      scheduleEyebrow: 'نظرة سريعة على المواعيد', scheduleTitle: 'ثلاثة أيام مكثفة كل أسبوع', scheduleText: 'تم الانتهاء من اليوم الأول، وتستمر الورشة خلال أغسطس 2026 أيام السبت والاثنين والأربعاء من الساعة 09:00 إلى 15:00.',
       sat: 'السبت', sun: 'الأحد', mon: 'الاثنين', tue: 'الثلاثاء', wed: 'الأربعاء', thu: 'الخميس', fri: 'الجمعة', noSession: 'لا توجد جلسة',
       speakersEyebrow: 'محاضرو الورشة', speakersTitle: 'خبرات تمتد من الحوسبة إلى التجربة', speakersText: 'استعرض محاضرة كل متحدث وخبرته وجهة عمله وبيانات التواصل والملصق الرسمي.',
       filterAll: 'جميع المحاضرين', filterComputational: 'المجال الحاسوبي', filterPractical: 'الجلسات العملية', filterInstrumentation: 'الأجهزة العلمية', filterExperimental: 'المعملي والفيزياء الطبية',
@@ -75,10 +91,10 @@
       impactOne: 'إعداد أنظمة جزيئية قابلة لإعادة الإنتاج وتوثيق الافتراضات.', impactTwo: 'تفسير نتائج الالتحام والمحاكاة وطاقة الارتباط بصورة نقدية.',
       impactThree: 'إعداد تحليلات وأشكال علمية صالحة للنشر.', impactFour: 'ربط التنبؤات الحاسوبية باستراتيجية تجريبية مناسبة.',
       diagramModel: 'نمذجة', diagramSimulate: 'محاكاة', diagramAnalyze: 'تحليل', diagramValidate: 'تحقق',
-      galleryEyebrow: 'المواد الرسمية للورشة', galleryTitle: 'معرض الملصقات', galleryText: 'افتح أي ملصق لمشاهدته بالحجم الكامل. يتضمن المعرض الملصق العام باللغتين العربية والإنجليزية وملصقات المحاضرين.',
-      registrationEyebrow: 'التسجيل', registrationTitle: 'انضم إلى ورشة الفيزياء الحيوية الحاسوبية', registrationText: 'تبدأ الورشة في أغسطس 2026. أكمل نموذج Google الرسمي لإرسال طلب التسجيل؛ ويفتح رمز QR والزر نموذج التسجيل نفسه.',
+      galleryEyebrow: 'المواد الرسمية للورشة', galleryTitle: 'معرض الملصقات الرسمية', galleryText: 'افتح أي ملصق رسمي لمشاهدته بالحجم الكامل. يتضمن المعرض الملصق العام وملصقات المحاضرين.',
+      registrationEyebrow: 'الحضور', registrationTitle: 'سجّل حضورك في اليوم الأول', registrationText: 'أُغلق التسجيل في الورشة. يمكن للمشاركين الذين حضروا اليوم الأول تسجيل حضورهم من خلال النموذج الرسمي.',
       start: 'موعد البدء', august2026: 'أغسطس 2026', startsAugust: 'تبدأ في أغسطس 2026', duration: 'المدة', oneMonth: 'شهر واحد', frequency: 'المواعيد', threeDays: 'ثلاثة أيام أسبوعيًا', training: 'نوع التدريب', lecturesPractical: 'محاضرات وجلسات عملية',
-      openForm: 'فتح نموذج التسجيل', contactCoordinator: 'التواصل مع المنسق العلمي', scanRegister: 'امسح الرمز للتسجيل',
+      openForm: 'فتح نموذج الحضور', contactCoordinator: 'التواصل مع المنسق العلمي', scanRegister: 'امسح الرمز لتسجيل الحضور',
       venueEyebrow: 'مكان الانعقاد', venueTitle: 'قسم الفيزياء الحيوية', venueAddress: 'كلية العلوم، جامعة القاهرة، الجيزة، مصر', venueText: 'استخدم زر الخرائط أو امسح رمز QR للوصول إلى مكان انعقاد الورشة.', openMaps: 'فتح الموقع على خرائط Google', scanDirections: 'امسح الرمز للوصول',
       footerOrganizer: 'لجنة الثقافة العلمية، قسم الفيزياء الحيوية، كلية العلوم، جامعة القاهرة.', quickLinks: 'روابط سريعة', scientificCoordination: 'التنسيق العلمي', footerVenue: 'قسم الفيزياء الحيوية، كلية العلوم، جامعة القاهرة.', copyright: 'ورشة الفيزياء الحيوية الحاسوبية. جميع الحقوق محفوظة.', backTop: 'العودة للأعلى ↑',
       lectureTitle: 'عنوان المحاضرة', openPoster: 'فتح الملصق الكامل', viewDetails: 'عرض التفاصيل', poster: 'الملصق', email: 'البريد الإلكتروني'
@@ -93,6 +109,9 @@
   let currentLanguage = safeStorage.get('cbw-language') === 'ar' ? 'ar' : 'en';
   let currentFilter = 'all';
   let currentGalleryIndex = 0;
+  let currentLightboxItems = data.gallery;
+  let dayOneShuffleTimer = 0;
+  let lastDayOneSelection = '';
 
   const $ = (selector, root = document) => root.querySelector(selector);
   const $$ = (selector, root = document) => [...root.querySelectorAll(selector)];
@@ -145,6 +164,7 @@
     renderPatronage();
     renderCurriculum();
     renderSpeakers();
+    renderDayOneGallery(false);
     renderGallery();
   }
 
@@ -211,6 +231,62 @@
     observeReveals(grid);
   }
 
+
+  function shuffledIndices(length) {
+    const indices = Array.from({ length }, (_, index) => index);
+    for (let i = indices.length - 1; i > 0; i -= 1) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [indices[i], indices[j]] = [indices[j], indices[i]];
+    }
+    return indices;
+  }
+
+  function chooseDayOnePhotos() {
+    const count = Math.min(6, data.dayOneGallery.length);
+    let selection = shuffledIndices(data.dayOneGallery.length).slice(0, count);
+    let signature = [...selection].sort((a, b) => a - b).join(',');
+    if (signature === lastDayOneSelection && data.dayOneGallery.length > count) {
+      selection = shuffledIndices(data.dayOneGallery.length).slice(0, count);
+      signature = [...selection].sort((a, b) => a - b).join(',');
+    }
+    lastDayOneSelection = signature;
+    return selection;
+  }
+
+  function renderDayOneGallery(restartTimer = true) {
+    const grid = $('#day-one-gallery-grid');
+    if (!grid || !Array.isArray(data.dayOneGallery) || !data.dayOneGallery.length) return;
+
+    const selection = chooseDayOnePhotos();
+    grid.classList.add('is-changing');
+
+    window.setTimeout(() => {
+      grid.innerHTML = selection.map((index, position) => {
+        const item = data.dayOneGallery[index];
+        return `
+          <button class="day-one-photo reveal is-visible" type="button" data-day-one-index="${index}" aria-label="Open ${localText(item, 'title')}">
+            <img src="${item.src}" alt="${localText(item, 'title')}" width="1600" height="720" loading="${position < 3 ? 'eager' : 'lazy'}" decoding="async">
+            <span class="day-one-photo-overlay"><strong>${localText(item, 'title')}</strong><small>${position + 1}/6</small></span>
+          </button>
+        `;
+      }).join('');
+
+      $$('.day-one-photo', grid).forEach(button => {
+        button.addEventListener('click', () => openLightbox(Number(button.dataset.dayOneIndex), data.dayOneGallery));
+      });
+      grid.classList.remove('is-changing');
+    }, grid.children.length ? 180 : 0);
+
+    if (restartTimer) startDayOneShuffle();
+  }
+
+  function startDayOneShuffle() {
+    window.clearInterval(dayOneShuffleTimer);
+    dayOneShuffleTimer = window.setInterval(() => {
+      if (!document.hidden) renderDayOneGallery(false);
+    }, 10000);
+  }
+
   function renderGallery() {
     const grid = $('#gallery-grid');
     if (!grid) return;
@@ -221,7 +297,7 @@
         <span class="gallery-caption">${item.title}</span>
       </button>
     `).join('');
-    $$('.gallery-item', grid).forEach(button => button.addEventListener('click', () => openLightbox(Number(button.dataset.galleryIndex))));
+    $$('.gallery-item', grid).forEach(button => button.addEventListener('click', () => openLightbox(Number(button.dataset.galleryIndex), data.gallery)));
     observeReveals(grid);
   }
 
@@ -251,13 +327,14 @@
     showDialog(modal);
   }
 
-  function openLightbox(index) {
-    currentGalleryIndex = (index + data.gallery.length) % data.gallery.length;
-    const item = data.gallery[currentGalleryIndex];
+  function openLightbox(index, items = data.gallery) {
+    currentLightboxItems = items;
+    currentGalleryIndex = (index + currentLightboxItems.length) % currentLightboxItems.length;
+    const item = currentLightboxItems[currentGalleryIndex];
     const lightbox = $('#lightbox');
     $('#lightbox-image').src = item.src;
-    $('#lightbox-image').alt = item.title;
-    $('#lightbox-caption').textContent = item.title;
+    $('#lightbox-image').alt = localText(item, 'title');
+    $('#lightbox-caption').textContent = localText(item, 'title');
     showDialog(lightbox);
   }
 
@@ -281,8 +358,8 @@
     const lightbox = $('#lightbox');
     $('.modal-close', speakerModal)?.addEventListener('click', () => closeDialog(speakerModal));
     $('.lightbox-close', lightbox)?.addEventListener('click', () => closeDialog(lightbox));
-    $('.lightbox-prev')?.addEventListener('click', () => openLightbox(currentGalleryIndex - 1));
-    $('.lightbox-next')?.addEventListener('click', () => openLightbox(currentGalleryIndex + 1));
+    $('.lightbox-prev')?.addEventListener('click', () => openLightbox(currentGalleryIndex - 1, currentLightboxItems));
+    $('.lightbox-next')?.addEventListener('click', () => openLightbox(currentGalleryIndex + 1, currentLightboxItems));
 
     [speakerModal, lightbox].forEach(dialog => {
       dialog?.addEventListener('click', event => {
@@ -298,8 +375,8 @@
         if (speakerModal?.open) closeDialog(speakerModal);
         if (lightbox?.open) closeDialog(lightbox);
       }
-      if (lightbox?.open && event.key === 'ArrowLeft') openLightbox(currentGalleryIndex - 1);
-      if (lightbox?.open && event.key === 'ArrowRight') openLightbox(currentGalleryIndex + 1);
+      if (lightbox?.open && event.key === 'ArrowLeft') openLightbox(currentGalleryIndex - 1, currentLightboxItems);
+      if (lightbox?.open && event.key === 'ArrowRight') openLightbox(currentGalleryIndex + 1, currentLightboxItems);
     });
   }
 
@@ -380,6 +457,23 @@
       element.dataset.revealBound = 'true';
       observer.observe(element);
     });
+  }
+
+
+  async function initDayOneProgramLink() {
+    const link = $('.day-one-program-link');
+    const note = $('.program-pdf-note');
+    if (!link || !data.dayOneProgramUrl) return;
+    link.href = data.dayOneProgramUrl;
+
+    try {
+      const response = await fetch(data.dayOneProgramUrl, { method: 'HEAD', cache: 'no-store' });
+      if (!response.ok) return;
+      link.hidden = false;
+      if (note) note.hidden = true;
+    } catch (_) {
+      // The PDF button remains hidden until the file is uploaded to the expected path.
+    }
   }
 
   function initMoleculeCanvas() {
@@ -497,12 +591,19 @@
     bindNavigation();
     bindFilters();
     bindDialogs();
+    $('.shuffle-now-button')?.addEventListener('click', () => renderDayOneGallery(true));
+    initDayOneProgramLink();
+    document.addEventListener('visibilitychange', () => {
+      if (!document.hidden) startDayOneShuffle();
+      else window.clearInterval(dayOneShuffleTimer);
+    });
     $('.language-toggle')?.addEventListener('click', () => {
       currentLanguage = currentLanguage === 'en' ? 'ar' : 'en';
       safeStorage.set('cbw-language', currentLanguage);
       applyLanguage();
     });
     applyLanguage();
+    startDayOneShuffle();
     observeReveals();
     initMoleculeCanvas();
     $('#year').textContent = new Date().getFullYear();

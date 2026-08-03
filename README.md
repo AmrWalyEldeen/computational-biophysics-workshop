@@ -77,3 +77,13 @@ Version 3 classifies the live viewport as `mobile`, `tablet`, or `desktop` in `a
 ## Workshop video
 
 The responsive video player uses `assets/video/workshop-introduction.mp4` and `assets/video/workshop-video-poster.jpg`. Replace both files with the same filenames to update the video without changing HTML.
+
+
+## Current workshop status
+
+- Registration: closed
+- Workshop: in progress
+- Day 1: completed
+- Attendance form: https://forms.gle/hbZJExKjhhXJ5MBY7
+- Day 1 gallery: six photos displayed and reshuffled every 10 seconds
+- Optional Day 1 program PDF path: `assets/documents/day-1-program.pdf`

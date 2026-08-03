@@ -2106,3 +2106,346 @@ html[dir="rtl"] .video-caption {
     scroll-behavior: auto;
   }
 }
+
+
+/* =========================================================
+   V3.0.5 — Workshop status, Day 1 recap, attendance and
+   six-photo rotating gallery.
+   ========================================================= */
+
+.day-one-recap-section {
+  background:
+    radial-gradient(circle at 12% 18%, rgba(239, 208, 138, .28), transparent 28%),
+    linear-gradient(145deg, #ffffff, var(--blue-50));
+  border-block: 1px solid var(--line);
+}
+
+.day-one-recap-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+}
+
+.day-one-recap-card {
+  max-width: 850px;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 9px 14px;
+  border-radius: 999px;
+  background: rgba(22, 135, 84, .12);
+  color: #0b7042;
+  border: 1px solid rgba(22, 135, 84, .22);
+  font-size: .78rem;
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.status-pill::before {
+  content: "✓";
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: #168754;
+  font-size: .74rem;
+}
+
+.day-one-recap-card h2 {
+  margin: 16px 0 16px;
+  color: var(--navy-900);
+  font-family: var(--serif);
+  font-size: clamp(2.35rem, 4.5vw, 4.7rem);
+  line-height: 1.02;
+  letter-spacing: -.04em;
+}
+
+.day-one-recap-card > p:not(.eyebrow):not(.program-pdf-note) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.day-one-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 26px;
+}
+
+.program-pdf-note {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: .86rem;
+}
+
+.day-one-summary {
+  display: grid;
+  gap: 14px;
+}
+
+.day-one-summary div {
+  padding: 22px 24px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, .86);
+  border: 1px solid rgba(6, 42, 88, .1);
+  box-shadow: var(--shadow-sm);
+}
+
+.day-one-summary strong,
+.day-one-summary span {
+  display: block;
+}
+
+.day-one-summary strong {
+  color: var(--gold-700);
+  font-size: .72rem;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+
+.day-one-summary span {
+  margin-top: 6px;
+  color: var(--navy-900);
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.day-one-gallery-section {
+  background: linear-gradient(180deg, #fff, #f7f9fc);
+}
+
+.day-one-gallery-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  margin: -12px 0 24px;
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.shuffle-status {
+  color: var(--muted);
+  font-size: .86rem;
+  font-weight: 700;
+}
+
+.shuffle-now-button {
+  min-height: 40px;
+  padding: 9px 15px;
+  border-radius: 999px;
+  border: 1px solid rgba(6, 42, 88, .18);
+  background: var(--navy-900);
+  color: #fff;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.shuffle-now-button:hover,
+.shuffle-now-button:focus-visible {
+  background: var(--gold-500);
+  color: var(--navy-950);
+}
+
+.day-one-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  transition: opacity .18s ease, transform .18s ease;
+}
+
+.day-one-gallery-grid.is-changing {
+  opacity: .16;
+  transform: translateY(5px);
+}
+
+.day-one-photo {
+  position: relative;
+  aspect-ratio: 20 / 9;
+  min-width: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 18px;
+  background: var(--navy-950);
+  box-shadow: var(--shadow-sm);
+  cursor: zoom-in;
+}
+
+.day-one-photo img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: transform .38s ease, opacity .38s ease;
+}
+
+.day-one-photo:hover img {
+  transform: scale(1.035);
+  opacity: .88;
+}
+
+.day-one-photo::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(2, 20, 43, .88), transparent 56%);
+  pointer-events: none;
+}
+
+.day-one-photo-overlay {
+  position: absolute;
+  z-index: 2;
+  inset-inline: 14px;
+  bottom: 12px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 12px;
+  color: #fff;
+  text-align: start;
+}
+
+.day-one-photo-overlay strong {
+  max-width: 82%;
+  font-family: var(--serif);
+  font-size: .92rem;
+  line-height: 1.25;
+}
+
+.day-one-photo-overlay small {
+  flex: none;
+  padding: 5px 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.16);
+  backdrop-filter: blur(8px);
+  font-weight: 800;
+}
+
+.registration-section::before {
+  content: "REGISTRATION CLOSED";
+  position: absolute;
+  top: 24px;
+  inset-inline-start: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: #7d2630;
+  color: #fff;
+  font-size: .68rem;
+  font-weight: 900;
+  letter-spacing: .11em;
+}
+
+html[dir="rtl"] .registration-section::before {
+  content: "التسجيل مغلق";
+}
+
+.registration-points {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.qr-frame img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+@media (max-width: 1040px) {
+  .day-one-recap-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .day-one-summary {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .day-one-gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .registration-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+html[data-device="tablet"] .day-one-recap-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="tablet"] .day-one-summary {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+html[data-device="tablet"] .day-one-gallery-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+html[data-device="mobile"] .day-one-recap-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 28px;
+}
+
+html[data-device="mobile"] .day-one-recap-card h2 {
+  font-size: clamp(2rem, 10vw, 2.8rem);
+}
+
+html[data-device="mobile"] .day-one-actions {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="mobile"] .day-one-actions .button {
+  width: 100%;
+  justify-content: center;
+}
+
+html[data-device="mobile"] .day-one-summary {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+html[data-device="mobile"] .day-one-gallery-toolbar {
+  align-items: stretch;
+  flex-direction: column;
+  margin-top: 0;
+}
+
+html[data-device="mobile"] .shuffle-now-button {
+  width: 100%;
+}
+
+html[data-device="mobile"] .day-one-gallery-grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 14px;
+}
+
+html[data-device="mobile"] .day-one-photo {
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+}
+
+html[data-device="mobile"] .registration-points {
+  grid-template-columns: minmax(0, 1fr);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .day-one-gallery-grid,
+  .day-one-photo img {
+    transition: none;
+  }
+}

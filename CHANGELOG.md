@@ -1,10 +1,18 @@
 # Changelog
 
-## Version 3.0.4 — Workshop video
+## Version 3.0.5 — Day 1 update
 
-- Added the supplied 30-second workshop introduction video.
-- Optimized the video from about 17 MB to about 3.7 MB for faster GitHub Pages delivery.
-- Added a responsive 16:9 video player with controls, poster image, and mobile `playsinline` behavior.
-- Added English and Arabic video-section content.
-- Added a direct link to the video section from the workshop overview.
-- Preserved the August 2026 start notice and all presenter updates from Version 3.0.3.
+- Marked workshop registration as closed.
+- Updated the website status to show that the workshop is underway and Day 1 is complete.
+- Replaced all registration calls to action with the official Day 1 attendance form.
+- Added a new attendance QR code linked to:
+  https://forms.gle/hbZJExKjhhXJ5MBY7
+- Added a responsive Day 1 photo gallery.
+- The gallery displays exactly six photographs at a time.
+- The six photographs automatically reshuffle every 10 seconds.
+- Added a manual **Shuffle now** button.
+- Added full-screen lightbox viewing for Day 1 photographs.
+- Added English and Arabic text for all new status, gallery, and attendance content.
+- Added an optional Day 1 program-PDF slot at:
+  `assets/documents/day-1-program.pdf`
+  The download button appears automatically when the PDF exists.
