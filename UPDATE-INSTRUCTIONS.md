@@ -1,39 +1,22 @@
-# Update instructions — Version 3.0.5
+# Update Existing GitHub Website to V3.1.0
 
-## Uploading this update to GitHub
+1. Extract the update ZIP file.
+2. Open the GitHub repository.
+3. Select **Add file > Upload files**.
+4. Upload everything inside the extracted update folder.
+5. Allow GitHub to replace existing files and add the new folders.
+6. Commit with: `Add interactive program and workshop materials library`
+7. Wait 1-3 minutes for GitHub Pages.
+8. Force-refresh the website: `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.
 
-1. Open the repository:
-   `AmrWalyEldeen/computational-biophysics-workshop`
-2. Select **Add file → Upload files**.
-3. Upload the contents of the update package, not the ZIP file.
-4. Allow GitHub to replace the existing files.
-5. Use the commit message:
-   `Close registration and add Day 1 gallery and attendance`
-6. Wait 1–3 minutes for GitHub Pages to deploy.
-7. Force-refresh the website:
-   - Windows: `Ctrl + F5`
-   - macOS: `Cmd + Shift + R`
+Important new folders and files:
 
-## Day 1 program PDF
-
-The PDF was not included with the supplied files. The website is already prepared for it.
-
-Upload the PDF to this exact repository path and filename:
-
-`assets/documents/day-1-program.pdf`
-
-The Day 1 program download button will automatically appear; no HTML or JavaScript editing is required.
-
-## Day 1 gallery
-
-The gallery source images are stored in:
-
-`assets/day1/`
-
-The page displays six images and reshuffles them automatically every 10 seconds.
-
-## Attendance form
-
-The attendance form and QR code use:
-
-`https://forms.gle/hbZJExKjhhXJ5MBY7`
+```text
+assets/js/program-materials-data.js
+assets/js/program-materials.js
+assets/documents/full-workshop-program.pdf
+assets/documents/full-workshop-program.docx
+assets/materials/opening-day/
+assets/materials/thumbnails/
+MATERIALS-GUIDE.md
+```

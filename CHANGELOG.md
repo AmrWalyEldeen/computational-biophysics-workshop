@@ -1,18 +1,13 @@
 # Changelog
 
-## Version 3.0.5 — Day 1 update
+## V3.1.0 - Program Calendar and Materials Library
 
-- Marked workshop registration as closed.
-- Updated the website status to show that the workshop is underway and Day 1 is complete.
-- Replaced all registration calls to action with the official Day 1 attendance form.
-- Added a new attendance QR code linked to:
-  https://forms.gle/hbZJExKjhhXJ5MBY7
-- Added a responsive Day 1 photo gallery.
-- The gallery displays exactly six photographs at a time.
-- The six photographs automatically reshuffle every 10 seconds.
-- Added a manual **Shuffle now** button.
-- Added full-screen lightbox viewing for Day 1 photographs.
-- Added English and Arabic text for all new status, gallery, and attendance content.
-- Added an optional Day 1 program-PDF slot at:
-  `assets/documents/day-1-program.pdf`
-  The download button appears automatically when the PDF exists.
+- Reclassified 3 August 2026 as the Opening Day, separate from Training Day 1.
+- Added an interactive August 2026 calendar covering the Opening Day and 11 training days.
+- Added detailed daily modules, topics, lecturers, activity types, delivery modes, and 10:00-15:00 times.
+- Added the official full program in PDF and DOCX formats.
+- Added an organized materials library with day selection, type filters, and search.
+- Added Opening Day Google Drive folder and embedded YouTube video.
+- Added three Opening Day presentation PDFs with optimized preview thumbnails.
+- Renamed Day 1 gallery and attendance references to Opening Day.
+- Added future-ready documentation for uploading materials for subsequent days.

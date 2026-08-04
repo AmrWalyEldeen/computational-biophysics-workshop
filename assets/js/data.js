@@ -1,6 +1,7 @@
 window.WORKSHOP_DATA = {
   registrationUrl: "https://forms.gle/hbZJExKjhhXJ5MBY7",
-  dayOneProgramUrl: "assets/documents/day-1-program.pdf",
+  dayOneProgramUrl: "assets/documents/full-workshop-program.pdf",
+  fullProgramDocxUrl: "assets/documents/full-workshop-program.docx",
   mapUrl: "https://maps.app.goo.gl/uhYo2Fi12Zrp2APfA",
   contactEmail: "dr_abdo@cu.edu.eg",
   patronage: [
@@ -345,93 +346,93 @@ window.WORKSHOP_DATA = {
   dayOneGallery: [
       {
           "src": "assets/day1/day1-01.webp",
-          "title": "Day 1 workshop session — photo 1",
-          "titleAr": "فعاليات اليوم الأول — الصورة 1"
+          "title": "Opening Day workshop session — photo 1",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 1"
       },
       {
           "src": "assets/day1/day1-02.webp",
-          "title": "Day 1 workshop session — photo 2",
-          "titleAr": "فعاليات اليوم الأول — الصورة 2"
+          "title": "Opening Day workshop session — photo 2",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 2"
       },
       {
           "src": "assets/day1/day1-03.webp",
-          "title": "Day 1 workshop session — photo 3",
-          "titleAr": "فعاليات اليوم الأول — الصورة 3"
+          "title": "Opening Day workshop session — photo 3",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 3"
       },
       {
           "src": "assets/day1/day1-04.webp",
-          "title": "Day 1 workshop session — photo 4",
-          "titleAr": "فعاليات اليوم الأول — الصورة 4"
+          "title": "Opening Day workshop session — photo 4",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 4"
       },
       {
           "src": "assets/day1/day1-05.webp",
-          "title": "Day 1 workshop session — photo 5",
-          "titleAr": "فعاليات اليوم الأول — الصورة 5"
+          "title": "Opening Day workshop session — photo 5",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 5"
       },
       {
           "src": "assets/day1/day1-06.webp",
-          "title": "Day 1 workshop session — photo 6",
-          "titleAr": "فعاليات اليوم الأول — الصورة 6"
+          "title": "Opening Day workshop session — photo 6",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 6"
       },
       {
           "src": "assets/day1/day1-07.webp",
-          "title": "Day 1 workshop session — photo 7",
-          "titleAr": "فعاليات اليوم الأول — الصورة 7"
+          "title": "Opening Day workshop session — photo 7",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 7"
       },
       {
           "src": "assets/day1/day1-08.webp",
-          "title": "Day 1 workshop session — photo 8",
-          "titleAr": "فعاليات اليوم الأول — الصورة 8"
+          "title": "Opening Day workshop session — photo 8",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 8"
       },
       {
           "src": "assets/day1/day1-09.webp",
-          "title": "Day 1 workshop session — photo 9",
-          "titleAr": "فعاليات اليوم الأول — الصورة 9"
+          "title": "Opening Day workshop session — photo 9",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 9"
       },
       {
           "src": "assets/day1/day1-10.webp",
-          "title": "Day 1 workshop session — photo 10",
-          "titleAr": "فعاليات اليوم الأول — الصورة 10"
+          "title": "Opening Day workshop session — photo 10",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 10"
       },
       {
           "src": "assets/day1/day1-11.webp",
-          "title": "Day 1 workshop session — photo 11",
-          "titleAr": "فعاليات اليوم الأول — الصورة 11"
+          "title": "Opening Day workshop session — photo 11",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 11"
       },
       {
           "src": "assets/day1/day1-12.webp",
-          "title": "Day 1 workshop session — photo 12",
-          "titleAr": "فعاليات اليوم الأول — الصورة 12"
+          "title": "Opening Day workshop session — photo 12",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 12"
       },
       {
           "src": "assets/day1/day1-13.webp",
-          "title": "Day 1 workshop session — photo 13",
-          "titleAr": "فعاليات اليوم الأول — الصورة 13"
+          "title": "Opening Day workshop session — photo 13",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 13"
       },
       {
           "src": "assets/day1/day1-14.webp",
-          "title": "Day 1 workshop session — photo 14",
-          "titleAr": "فعاليات اليوم الأول — الصورة 14"
+          "title": "Opening Day workshop session — photo 14",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 14"
       },
       {
           "src": "assets/day1/day1-15.webp",
-          "title": "Day 1 workshop session — photo 15",
-          "titleAr": "فعاليات اليوم الأول — الصورة 15"
+          "title": "Opening Day workshop session — photo 15",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 15"
       },
       {
           "src": "assets/day1/day1-16.webp",
-          "title": "Day 1 workshop session — photo 16",
-          "titleAr": "فعاليات اليوم الأول — الصورة 16"
+          "title": "Opening Day workshop session — photo 16",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 16"
       },
       {
           "src": "assets/day1/day1-17.webp",
-          "title": "Day 1 workshop session — photo 17",
-          "titleAr": "فعاليات اليوم الأول — الصورة 17"
+          "title": "Opening Day workshop session — photo 17",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 17"
       },
       {
           "src": "assets/day1/day1-18.webp",
-          "title": "Day 1 workshop session — photo 18",
-          "titleAr": "فعاليات اليوم الأول — الصورة 18"
+          "title": "Opening Day workshop session — photo 18",
+          "titleAr": "فعاليات اليوم الافتتاحي — الصورة 18"
       }
   ],
   gallery: [
