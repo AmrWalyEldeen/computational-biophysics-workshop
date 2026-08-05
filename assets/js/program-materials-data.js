@@ -162,7 +162,8 @@ window.WORKSHOP_PROGRAM = {
             }
           ]
         }
-      ]
+      ],
+      "materialsAvailable": true
     },
     {
       "id": "day-2",
@@ -1102,6 +1103,103 @@ window.WORKSHOP_PROGRAM = {
       "meta": {
         "en": "PDF slides - 29 pages",
         "ar": "شرائح PDF - 29 صفحة"
+      }
+    },
+    {
+      "id": "day-1-drive",
+      "dayId": "day-1",
+      "type": "drive",
+      "title": {
+        "en": "Training Day 1 shared Google Drive folder",
+        "ar": "مجلد Google Drive المشترك لليوم التدريبي الأول"
+      },
+      "presenter": {
+        "en": "Workshop training team",
+        "ar": "فريق تدريب الورشة"
+      },
+      "description": {
+        "en": "Open the shared folder for Training Day 1 files, practical resources, and supporting material.",
+        "ar": "افتح المجلد المشترك للوصول إلى ملفات اليوم التدريبي الأول والموارد العملية والمواد الداعمة."
+      },
+      "url": "https://drive.google.com/drive/folders/11N_jrM1Wlh0ID_Tgwe5H12IoFUxGo-KY",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Google Drive folder",
+        "ar": "مجلد Google Drive"
+      }
+    },
+    {
+      "id": "day-1-video",
+      "dayId": "day-1",
+      "type": "video",
+      "title": {
+        "en": "Training Day 1 workshop video",
+        "ar": "فيديو اليوم التدريبي الأول"
+      },
+      "presenter": {
+        "en": "Computational Biophysics Workshop",
+        "ar": "ورشة الفيزياء الحيوية الحاسوبية"
+      },
+      "description": {
+        "en": "Watch the Training Day 1 video directly on the website or open it on YouTube.",
+        "ar": "شاهد فيديو اليوم التدريبي الأول مباشرة داخل الموقع أو افتحه على YouTube."
+      },
+      "url": "https://www.youtube.com/watch?v=dSQc4Oghn7M",
+      "embed": "https://www.youtube-nocookie.com/embed/dSQc4Oghn7M",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "YouTube video",
+        "ar": "فيديو YouTube"
+      }
+    },
+    {
+      "id": "day-1-linux",
+      "dayId": "day-1",
+      "type": "slides",
+      "title": {
+        "en": "Introduction to Linux for Bioinformatics & HPCC",
+        "ar": "مقدمة إلى Linux للمعلوماتية الحيوية والحوسبة عالية الأداء"
+      },
+      "presenter": {
+        "en": "Mahmoud A. Noamaan, PhD",
+        "ar": "د. محمود أ. نعمان"
+      },
+      "description": {
+        "en": "Lecture slides covering Linux foundations, files and directories, essential commands, text editors, environment variables, and basic Bash scripting.",
+        "ar": "شرائح محاضرة تغطي أساسيات Linux والملفات والمجلدات والأوامر الأساسية ومحررات النصوص ومتغيرات البيئة والبرمجة الأساسية بلغة Bash."
+      },
+      "url": "assets/materials/day-1/introduction-linux-bioinformatics-hpcc-mahmoud-noamaan.pdf",
+      "downloadUrl": "assets/materials/day-1/introduction-linux-bioinformatics-hpcc-mahmoud-noamaan.pdf",
+      "thumbnail": "assets/materials/thumbnails/introduction-linux-mahmoud-noamaan.webp",
+      "meta": {
+        "en": "PDF slides - 71 pages",
+        "ar": "شرائح PDF - 71 صفحة"
+      }
+    },
+    {
+      "id": "day-1-structural-biology",
+      "dayId": "day-1",
+      "type": "slides",
+      "title": {
+        "en": "Introduction to Structural Biology",
+        "ar": "مقدمة إلى البيولوجيا البنيوية"
+      },
+      "presenter": {
+        "en": "Prof. Dr. Abdo A. Elfiky",
+        "ar": "أ.د. عبدو أ. الفقي"
+      },
+      "description": {
+        "en": "Lecture slides introducing structural biology, biomolecules, protein structure, amino acids, the PDB, and the relationship between molecular structure and function.",
+        "ar": "شرائح محاضرة تقدم البيولوجيا البنيوية والجزيئات الحيوية وبنية البروتين والأحماض الأمينية وقاعدة بيانات PDB والعلاقة بين البنية الجزيئية والوظيفة."
+      },
+      "url": "assets/materials/day-1/introduction-structural-biology-abdo-elfiky.pdf",
+      "downloadUrl": "assets/materials/day-1/introduction-structural-biology-abdo-elfiky.pdf",
+      "thumbnail": "assets/materials/thumbnails/introduction-structural-biology-abdo-elfiky.webp",
+      "meta": {
+        "en": "PDF slides - 34 pages",
+        "ar": "شرائح PDF - 34 صفحة"
       }
     }
   ],

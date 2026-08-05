@@ -99,3 +99,17 @@ Use the video ID in the privacy-enhanced embed address:
 ## 5. Upload the update to GitHub
 
 Upload the changed files and folders, then commit. GitHub Pages will redeploy automatically.
+
+## Current Training Day 1 example
+
+Training Day 1 is stored in:
+
+```text
+assets/materials/day-1/
+```
+
+It demonstrates how to combine local PDFs, a Google Drive folder, and a YouTube video under one workshop date. Photographs are stored separately in:
+
+```text
+assets/training-day-1/
+```
