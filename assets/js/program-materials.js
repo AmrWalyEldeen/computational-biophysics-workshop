@@ -52,8 +52,8 @@
   };
   const tr = key => copy[language()][key];
 
-  let selectedProgramDay = 'day-1';
-  let selectedMaterialsDay = 'day-1';
+  let selectedProgramDay = 'day-2';
+  let selectedMaterialsDay = 'day-2';
   let selectedType = 'all';
   let searchTerm = '';
 
@@ -67,6 +67,7 @@
 
   function dayStatus(day) {
     const today = localToday();
+    if (day.materialsAvailable) return 'completed';
     if (day.date < today) return 'completed';
     if (day.date === today) return 'today';
     return 'upcoming';

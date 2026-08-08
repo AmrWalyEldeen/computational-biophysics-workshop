@@ -178,8 +178,8 @@ window.WORKSHOP_PROGRAM = {
         "ar": "اليوم التدريبي 2"
       },
       "title": {
-        "en": "Protein modeling: homology modeling, refinement, and validation",
-        "ar": "نمذجة البروتين: النمذجة بالتماثل والتحسين والتحقق"
+        "en": "Protein modeling, sequence comparison, BLAST, and structural validation",
+        "ar": "نمذجة البروتين، مقارنة التسلسلات، BLAST، والتحقق البنيوي"
       },
       "time": {
         "en": "10:00-15:00",
@@ -190,8 +190,8 @@ window.WORKSHOP_PROGRAM = {
         "ar": "حضوري"
       },
       "activity": {
-        "en": "Lecture + hands-on (online servers)",
-        "ar": "محاضرة + تدريب عملي (خوادم عبر الإنترنت)"
+        "en": "Lecture + hands-on protein modeling practice",
+        "ar": "محاضرة + تدريب عملي على نمذجة البروتين"
       },
       "lecturers": [
         {
@@ -244,7 +244,8 @@ window.WORKSHOP_PROGRAM = {
             }
           ]
         }
-      ]
+      ],
+      "materialsAvailable": true
     },
     {
       "id": "day-3",
@@ -1200,6 +1201,54 @@ window.WORKSHOP_PROGRAM = {
       "meta": {
         "en": "PDF slides - 34 pages",
         "ar": "شرائح PDF - 34 صفحة"
+      }
+    },
+    {
+      "id": "day-2-drive",
+      "dayId": "day-2",
+      "type": "drive",
+      "title": {
+        "en": "Training Day 2 shared Google Drive folder",
+        "ar": "مجلد Google Drive المشترك لليوم التدريبي الثاني"
+      },
+      "presenter": {
+        "en": "Workshop training team",
+        "ar": "فريق تدريب الورشة"
+      },
+      "description": {
+        "en": "Open the shared folder for Training Day 2 files, practical resources, and supporting materials.",
+        "ar": "افتح المجلد المشترك للوصول إلى ملفات اليوم التدريبي الثاني والموارد العملية والمواد الداعمة."
+      },
+      "url": "https://drive.google.com/drive/folders/1GuIFrq4f0tVmuc_pzdNg9sI1doryjv-L",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Google Drive folder",
+        "ar": "مجلد Google Drive"
+      }
+    },
+    {
+      "id": "day-2-protein-modeling",
+      "dayId": "day-2",
+      "type": "slides",
+      "title": {
+        "en": "Protein Modeling",
+        "ar": "نمذجة البروتين"
+      },
+      "presenter": {
+        "en": "Dr. Ahmed A. Ezat",
+        "ar": "د. أحمد عادل عزت"
+      },
+      "description": {
+        "en": "Workshop slides covering amino-acid sequence information, sequence comparisons and alignments, BLAST searches, FASTA format, protein structure data, X-ray density maps, PDB interpretation, and model validation.",
+        "ar": "شرائح الورشة التي تغطي معلومات تسلسل الأحماض الأمينية، مقارنة ومحاذاة التسلسلات، بحث BLAST، تنسيق FASTA، بيانات بنية البروتين، خرائط كثافة الأشعة السينية، تفسير ملفات PDB، والتحقق من النماذج."
+      },
+      "url": "assets/materials/day-2/protein-modeling-workshop-ahmed-ezat.pdf",
+      "downloadUrl": "assets/materials/day-2/protein-modeling-workshop-ahmed-ezat.pptx",
+      "thumbnail": "assets/materials/thumbnails/protein-modeling-ahmed-ezat.webp",
+      "meta": {
+        "en": "PowerPoint + PDF - 52 slides",
+        "ar": "PowerPoint + PDF - 52 شريحة"
       }
     }
   ],

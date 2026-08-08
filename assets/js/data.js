@@ -528,5 +528,62 @@ window.WORKSHOP_DATA = {
       "title": "Training Day 1 - interactive computational practice",
       "titleAr": "اليوم التدريبي الأول - تطبيق حاسوبي تفاعلي"
     }
+  ],
+  "trainingDayTwoGallery": [
+    {
+      "src": "assets/training-day-2/training-day-2-01.webp",
+      "title": "Training Day 2 - participants during the protein-modeling workshop",
+      "titleAr": "اليوم التدريبي الثاني - المشاركون خلال ورشة نمذجة البروتين"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-02.webp",
+      "title": "Training Day 2 - focused hands-on protein-modeling session",
+      "titleAr": "اليوم التدريبي الثاني - جلسة عملية مركزة في نمذجة البروتين"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-03.webp",
+      "title": "Training Day 2 - instructor discussion with participants",
+      "titleAr": "اليوم التدريبي الثاني - نقاش المحاضر مع المشاركين"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-04.webp",
+      "title": "Training Day 2 - practical demonstration and Q&A",
+      "titleAr": "اليوم التدريبي الثاني - عرض عملي وجلسة أسئلة"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-05.webp",
+      "title": "Training Day 2 - participants following the modeling workflow",
+      "titleAr": "اليوم التدريبي الثاني - المشاركون يتابعون سير عمل النمذجة"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-06.webp",
+      "title": "Training Day 2 - classroom view during the lecture",
+      "titleAr": "اليوم التدريبي الثاني - منظر القاعة أثناء المحاضرة"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-07.webp",
+      "title": "Training Day 2 - interactive audience discussion",
+      "titleAr": "اليوم التدريبي الثاني - نقاش تفاعلي مع الحضور"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-08.webp",
+      "title": "Training Day 2 - practical protein-modeling training",
+      "titleAr": "اليوم التدريبي الثاني - تدريب عملي على نمذجة البروتين"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-09.webp",
+      "title": "Training Day 2 - workshop participants with laptops",
+      "titleAr": "اليوم التدريبي الثاني - المشاركون مع الحواسيب المحمولة"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-10.webp",
+      "title": "Training Day 2 - full-room scientific training",
+      "titleAr": "اليوم التدريبي الثاني - تدريب علمي بمشاركة الحضور"
+    },
+    {
+      "src": "assets/training-day-2/training-day-2-11.webp",
+      "title": "Training Day 2 - protein modeling session highlights",
+      "titleAr": "اليوم التدريبي الثاني - لقطات من جلسة نمذجة البروتين"
+    }
   ]
 };

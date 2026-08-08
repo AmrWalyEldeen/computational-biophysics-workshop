@@ -1,5 +1,17 @@
 # Changelog
 
+## V3.1.2 - Training Day 2 Completion and Materials
+
+- Marked Training Day 2 on 8 August 2026 as completed.
+- Updated the announcement bar, hero copy, status summary, and schedule text to show three completed workshop events.
+- Added eleven optimized Training Day 2 photographs.
+- Added Training Day 2 as a third selectable gallery tab.
+- The activity gallery continues to display six photos and reshuffle every 10 seconds.
+- Added the Training Day 2 Google Drive folder.
+- Added `Protein Modeling` by Dr. Ahmed A. Ezat as a PowerPoint download and browser-viewable PDF.
+- Added an optimized preview thumbnail for the Protein Modeling presentation.
+- Program and materials sections now open on Training Day 2 by default.
+
 ## V3.1.1 - Training Day 1 Completion and Materials
 
 - Marked Training Day 1 on 5 August 2026 as completed.
