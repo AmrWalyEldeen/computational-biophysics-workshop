@@ -1,4 +1,4 @@
-# Computational Biophysics Workshop Website - V3.1.3
+# Computational Biophysics Workshop Website - V3.1.4
 
 A complete static website prepared for GitHub Pages. It uses plain HTML, CSS, and JavaScript, so no build process or server-side code is required.
 
@@ -13,8 +13,8 @@ A complete static website prepared for GitHub Pages. It uses plain HTML, CSS, an
 - Opening Day learning materials and photographs
 - Training Day 1 learning materials, video, Drive folder, and photographs
 - Training Day 2 Protein Modeling materials, Drive folder, and photographs
-- Training Day 3 small-molecule modeling materials, Molecular Optimizer workflow, Colab notebook, Drive folder, molecular data files, and photographs
-- Multi-day gallery selector with six images displayed and reshuffled every 10 seconds
+- Training Day 3 small-molecule modeling materials, Molecular Optimizer workflow, Colab notebook, Drive folder, molecular data files, and an expanded photograph gallery
+- Multi-day gallery selector with six images displayed at a time and reshuffled every 10 seconds
 - Presenter profiles, official posters, location, and institutional information
 
 ## Deploy on GitHub Pages

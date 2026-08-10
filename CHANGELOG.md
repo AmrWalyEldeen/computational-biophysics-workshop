@@ -1,5 +1,11 @@
 # Changelog
 
+## V3.1.4 - Training Day 3 Gallery Expansion
+
+- Added twenty more optimized Training Day 3 photographs to the Day 3 gallery.
+- Training Day 3 gallery now contains twenty-eight photographs in total.
+- Kept the gallery behavior unchanged: six photographs are shown at a time and reshuffled every 10 seconds.
+
 ## V3.1.3 - Training Day 3 Completion and Materials
 
 - Marked Training Day 3 on 10 August 2026 as completed.

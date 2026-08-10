@@ -626,6 +626,106 @@ window.WORKSHOP_DATA = {
       "src": "assets/training-day-3/training-day-3-08.webp",
       "title": "Training Day 3 - participants during the small-molecule modeling workshop",
       "titleAr": "اليوم التدريبي الثالث - المشاركون خلال ورشة نمذجة الجزيئات الصغيرة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-09.webp",
+      "title": "Training Day 3 - instructor pointing to molecular modeling details",
+      "titleAr": "اليوم التدريبي الثالث - المحاضر يشير إلى تفاصيل نمذجة جزيئية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-10.webp",
+      "title": "Training Day 3 - explanation beside the projected molecular model",
+      "titleAr": "اليوم التدريبي الثالث - شرح بجانب النموذج الجزيئي المعروض"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-11.webp",
+      "title": "Training Day 3 - classroom explanation of practical modeling tools",
+      "titleAr": "اليوم التدريبي الثالث - شرح داخل القاعة لأدوات النمذجة العملية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-12.webp",
+      "title": "Training Day 3 - wide classroom view during the practical session",
+      "titleAr": "اليوم التدريبي الثالث - لقطة واسعة للقاعة خلال الجلسة العملية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-13.webp",
+      "title": "Training Day 3 - discussion of molecular geometry concepts",
+      "titleAr": "اليوم التدريبي الثالث - مناقشة مفاهيم الهندسة الجزيئية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-14.webp",
+      "title": "Training Day 3 - presentation of Molecular Optimizer Stage 1",
+      "titleAr": "اليوم التدريبي الثالث - عرض مرحلة الأولى من Molecular Optimizer"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-15.webp",
+      "title": "Training Day 3 - explaining the Stage 1 optimization workflow",
+      "titleAr": "اليوم التدريبي الثالث - شرح سير عمل التحسين في المرحلة الأولى"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-16.webp",
+      "title": "Training Day 3 - seminar discussion during the Stage 1 session",
+      "titleAr": "اليوم التدريبي الثالث - مناقشة أثناء جلسة المرحلة الأولى"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-17.webp",
+      "title": "Training Day 3 - wide view of the Stage 2 presentation",
+      "titleAr": "اليوم التدريبي الثالث - لقطة واسعة لعرض المرحلة الثانية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-18.webp",
+      "title": "Training Day 3 - close-up explanation of the Stage 2 slide",
+      "titleAr": "اليوم التدريبي الثالث - شرح مقرّب لشريحة المرحلة الثانية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-19.webp",
+      "title": "Training Day 3 - presenter pointing to the Stage 2 workflow",
+      "titleAr": "اليوم التدريبي الثالث - المحاضر يشير إلى مخطط المرحلة الثانية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-20.webp",
+      "title": "Training Day 3 - audience discussion during molecular refinement",
+      "titleAr": "اليوم التدريبي الثالث - نقاش مع الحضور أثناء تحسين الجزيئات"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-21.webp",
+      "title": "Training Day 3 - close classroom view during the optimizer session",
+      "titleAr": "اليوم التدريبي الثالث - لقطة قريبة للقاعة خلال جلسة المحسن الجزيئي"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-22.webp",
+      "title": "Training Day 3 - attendees following the front-of-room explanation",
+      "titleAr": "اليوم التدريبي الثالث - الحضور يتابعون الشرح من مقدمة القاعة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-23.webp",
+      "title": "Training Day 3 - wide shot during the pointing demonstration",
+      "titleAr": "اليوم التدريبي الثالث - لقطة واسعة أثناء العرض التوضيحي بالإشارة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-24.webp",
+      "title": "Training Day 3 - broad audience view of the lecture",
+      "titleAr": "اليوم التدريبي الثالث - منظر عام للحضور أثناء المحاضرة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-25.webp",
+      "title": "Training Day 3 - side-angle view of the classroom session",
+      "titleAr": "اليوم التدريبي الثالث - لقطة جانبية لجلسة القاعة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-26.webp",
+      "title": "Training Day 3 - room-wide perspective during the stage presentation",
+      "titleAr": "اليوم التدريبي الثالث - منظور واسع للقاعة أثناء عرض المراحل"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-27.webp",
+      "title": "Training Day 3 - instructor pointing to the projected molecular model",
+      "titleAr": "اليوم التدريبي الثالث - المحاضر يشير إلى النموذج الجزيئي المعروض"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-28.webp",
+      "title": "Training Day 3 - full audience view during the computational chemistry session",
+      "titleAr": "اليوم التدريبي الثالث - لقطة كاملة للحضور خلال جلسة الكيمياء الحاسوبية"
     }
   ]
 };
