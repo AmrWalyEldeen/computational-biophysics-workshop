@@ -585,5 +585,47 @@ window.WORKSHOP_DATA = {
       "title": "Training Day 2 - protein modeling session highlights",
       "titleAr": "اليوم التدريبي الثاني - لقطات من جلسة نمذجة البروتين"
     }
+  ],
+  "trainingDayThreeGallery": [
+    {
+      "src": "assets/training-day-3/training-day-3-01.webp",
+      "title": "Training Day 3 - small-molecule modeling presentation",
+      "titleAr": "اليوم التدريبي الثالث - عرض نمذجة الجزيئات الصغيرة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-02.webp",
+      "title": "Training Day 3 - discussion during the molecular optimization session",
+      "titleAr": "اليوم التدريبي الثالث - نقاش خلال جلسة تحسين الجزيئات"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-03.webp",
+      "title": "Training Day 3 - participants following the computational chemistry lecture",
+      "titleAr": "اليوم التدريبي الثالث - المشاركون يتابعون محاضرة الكيمياء الحاسوبية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-04.webp",
+      "title": "Training Day 3 - guided explanation during the practical session",
+      "titleAr": "اليوم التدريبي الثالث - شرح موجه خلال الجلسة العملية"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-05.webp",
+      "title": "Training Day 3 - interactive discussion with workshop participants",
+      "titleAr": "اليوم التدريبي الثالث - نقاش تفاعلي مع المشاركين"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-06.webp",
+      "title": "Training Day 3 - 3D molecular modeling demonstration",
+      "titleAr": "اليوم التدريبي الثالث - عرض عملي للنمذجة الجزيئية ثلاثية الأبعاد"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-07.webp",
+      "title": "Training Day 3 - hands-on work with laptops",
+      "titleAr": "اليوم التدريبي الثالث - تطبيق عملي باستخدام الحواسيب المحمولة"
+    },
+    {
+      "src": "assets/training-day-3/training-day-3-08.webp",
+      "title": "Training Day 3 - participants during the small-molecule modeling workshop",
+      "titleAr": "اليوم التدريبي الثالث - المشاركون خلال ورشة نمذجة الجزيئات الصغيرة"
+    }
   ]
 };

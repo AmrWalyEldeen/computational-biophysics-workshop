@@ -310,7 +310,8 @@ window.WORKSHOP_PROGRAM = {
             }
           ]
         }
-      ]
+      ],
+      "materialsAvailable": true
     },
     {
       "id": "day-4",
@@ -1250,6 +1251,156 @@ window.WORKSHOP_PROGRAM = {
         "en": "PowerPoint + PDF - 52 slides",
         "ar": "PowerPoint + PDF - 52 شريحة"
       }
+    },
+    {
+      "id": "day-3-drive",
+      "dayId": "day-3",
+      "type": "drive",
+      "title": {
+        "en": "Training Day 3 shared Google Drive folder",
+        "ar": "مجلد Google Drive المشترك لليوم التدريبي الثالث"
+      },
+      "presenter": {
+        "en": "Workshop training team",
+        "ar": "فريق تدريب الورشة"
+      },
+      "description": {
+        "en": "Open the shared folder for Training Day 3 files, practical resources, and supporting materials.",
+        "ar": "افتح المجلد المشترك للوصول إلى ملفات اليوم التدريبي الثالث والموارد العملية والمواد الداعمة."
+      },
+      "url": "https://drive.google.com/drive/folders/14sHPcC6X_2G0-haChvgWoljvrWCcqnoZ",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Google Drive folder",
+        "ar": "مجلد Google Drive"
+      }
+    },
+    {
+      "id": "day-3-small-molecule-modeling",
+      "dayId": "day-3",
+      "type": "slides",
+      "title": {
+        "en": "Modeling Small Molecules Using Avogadro & OpenBabel",
+        "ar": "نمذجة الجزيئات الصغيرة باستخدام Avogadro وOpenBabel"
+      },
+      "presenter": {
+        "en": "Training Day 3 team — Dr. Mahmoud Noamaan & Mr. Ibrahim Mohamed",
+        "ar": "فريق اليوم التدريبي الثالث — د. محمود نعمان وأ. إبراهيم محمد"
+      },
+      "description": {
+        "en": "Slides covering digital molecular representations, SMILES, 3D molecular file formats, energy landscapes, energy minimization, force fields, and practical modeling with Avogadro and OpenBabel.",
+        "ar": "شرائح تغطي التمثيل الرقمي للجزيئات وSMILES وتنسيقات الملفات الجزيئية ثلاثية الأبعاد ومناظر الطاقة وتصغير الطاقة وحقول القوة والتطبيق العملي باستخدام Avogadro وOpenBabel."
+      },
+      "url": "assets/materials/day-3/modeling-small-molecules-avogadro-openbabel.pdf",
+      "downloadUrl": "assets/materials/day-3/modeling-small-molecules-avogadro-openbabel.pptx",
+      "thumbnail": "assets/materials/thumbnails/small-molecule-modeling.webp",
+      "meta": {
+        "en": "PowerPoint + PDF · 25 slides",
+        "ar": "PowerPoint + PDF · 25 شريحة"
+      }
+    },
+    {
+      "id": "day-3-molecular-optimizer",
+      "dayId": "day-3",
+      "type": "slides",
+      "title": {
+        "en": "Molecular Optimizer Pro — Four-Stage Optimization Workflow",
+        "ar": "Molecular Optimizer Pro — سير عمل التحسين بأربع مراحل"
+      },
+      "presenter": {
+        "en": "Training Day 3 team",
+        "ar": "فريق اليوم التدريبي الثالث"
+      },
+      "description": {
+        "en": "A four-stage workflow from 3D conformer generation and classical minimization through GFN2-xTB refinement, optional DFT optimization, and Gaussian/HPC export for higher-level calculations.",
+        "ar": "سير عمل من أربع مراحل يبدأ بتوليد الأشكال ثلاثية الأبعاد والتصغير الكلاسيكي ثم تحسين GFN2-xTB وحسابات DFT الاختيارية والتصدير إلى Gaussian/HPC للحسابات الأعلى مستوى."
+      },
+      "url": "assets/materials/day-3/molecular-optimizer-pro.pdf",
+      "downloadUrl": "assets/materials/day-3/molecular-optimizer-pro.pptx",
+      "thumbnail": "assets/materials/thumbnails/molecular-optimizer-pro.webp",
+      "meta": {
+        "en": "PowerPoint + PDF · 4 workflow slides",
+        "ar": "PowerPoint + PDF · 4 شرائح لسير العمل"
+      }
+    },
+    {
+      "id": "day-3-colab",
+      "dayId": "day-3",
+      "type": "notebook",
+      "title": {
+        "en": "Training Day 3 Google Colab notebook",
+        "ar": "دفتر Google Colab لليوم التدريبي الثالث"
+      },
+      "presenter": {
+        "en": "Workshop training team",
+        "ar": "فريق تدريب الورشة"
+      },
+      "description": {
+        "en": "Open the practical notebook used for the Training Day 3 computational workflow directly in Google Colab.",
+        "ar": "افتح دفتر التطبيق العملي المستخدم في سير العمل الحاسوبي لليوم التدريبي الثالث مباشرة في Google Colab."
+      },
+      "url": "https://colab.research.google.com/drive/1jrMawiDHs_5_-W127CmWmTbog-hZsJFb#scrollTo=9UYLgbpEKF0B",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Interactive Google Colab notebook",
+        "ar": "دفتر Google Colab تفاعلي"
+      }
+    },
+    {
+      "id": "day-3-practical-files",
+      "dayId": "day-3",
+      "type": "file",
+      "title": {
+        "en": "Practical molecular structure files",
+        "ar": "ملفات التراكيب الجزيئية للتطبيق العملي"
+      },
+      "presenter": {
+        "en": "Training Day 3 practical session",
+        "ar": "الجلسة العملية لليوم التدريبي الثالث"
+      },
+      "description": {
+        "en": "Example small-molecule files for practicing format conversion, 3D structure handling, and modeling workflows. Download the complete pack or individual MOL2, XYZ, SDF, and SMILES files.",
+        "ar": "ملفات أمثلة للجزيئات الصغيرة للتدرب على تحويل التنسيقات والتعامل مع البنى ثلاثية الأبعاد وسير عمل النمذجة. حمّل الحزمة الكاملة أو ملفات MOL2 وXYZ وSDF وSMILES منفردة."
+      },
+      "url": "assets/materials/day-3/training-day-3-practical-molecule-files.zip",
+      "downloadUrl": "assets/materials/day-3/training-day-3-practical-molecule-files.zip",
+      "thumbnail": "",
+      "meta": {
+        "en": "ZIP + MOL2 + XYZ + SDF + SMILES",
+        "ar": "ZIP + MOL2 + XYZ + SDF + SMILES"
+      },
+      "attachments": [
+        {
+          "label": {
+            "en": "Ligand example · MOL2",
+            "ar": "مثال ليجند · MOL2"
+          },
+          "url": "assets/materials/day-3/ligand-example.mol2"
+        },
+        {
+          "label": {
+            "en": "Compound example · XYZ",
+            "ar": "مثال مركب · XYZ"
+          },
+          "url": "assets/materials/day-3/compound-example.xyz"
+        },
+        {
+          "label": {
+            "en": "Compound library · SDF",
+            "ar": "مكتبة مركبات · SDF"
+          },
+          "url": "assets/materials/day-3/compounds-library.sdf"
+        },
+        {
+          "label": {
+            "en": "SMILES examples",
+            "ar": "أمثلة SMILES"
+          },
+          "url": "assets/materials/day-3/compounds.smiles"
+        }
+      ]
     }
   ],
   "fullProgram": {

@@ -62,9 +62,11 @@ Find the `resources` array and add an object like this:
 
 Supported `type` values:
 
-- `slides` - PDFs, documents, datasets, scripts, ZIP files
+- `slides` - presentation PDFs with an optional original download
 - `video` - YouTube videos
 - `drive` - Google Drive folders or other shared folders
+- `notebook` - Google Colab notebooks
+- `file` - practical datasets, scripts, structure files, and ZIP bundles
 
 ## 3. Link the resource to the correct day
 
@@ -116,4 +118,11 @@ assets/materials/day-2/
 assets/training-day-2/
 ```
 
-The current structure demonstrates how to combine local PDFs, original PowerPoint files, Google Drive folders, YouTube videos, thumbnails, and day-specific activity photographs under one workshop date.
+Training Day 3 is stored in:
+
+```text
+assets/materials/day-3/
+assets/training-day-3/
+```
+
+The current structure demonstrates how to combine local PDFs, original PowerPoint files, Google Drive folders, Google Colab notebooks, practical molecule files, thumbnails, and day-specific activity photographs under one workshop date.

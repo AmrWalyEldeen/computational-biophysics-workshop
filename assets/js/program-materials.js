@@ -22,9 +22,9 @@
       opening: 'Opening', trainingDay: 'Day', modules: 'Modules', activity: 'Activity', lecturers: 'Lecturers', format: 'Format', time: 'Time',
       viewMaterials: 'View materials for this day', noMaterials: 'Materials will be added here after this session.',
       fullProgram: 'Full program', downloadPdf: 'View program PDF', downloadDocx: 'Download program DOCX',
-      allDays: 'All days', allTypes: 'All types', slides: 'Slides', video: 'Video', drive: 'Shared folder',
+      allDays: 'All days', allTypes: 'All types', slides: 'Slides', video: 'Video', drive: 'Shared folder', notebook: 'Colab notebook', file: 'Practical files',
       searchPlaceholder: 'Search materials by title or presenter', clearSearch: 'Clear search',
-      open: 'Open', viewPdf: 'View PDF', download: 'Download', watch: 'Watch on YouTube', openFolder: 'Open shared folder',
+      open: 'Open', viewPdf: 'View PDF', download: 'Download', watch: 'Watch on YouTube', openFolder: 'Open shared folder', openNotebook: 'Open in Colab', downloadPack: 'Download file pack',
       resourcesFound: count => `${count} resource${count === 1 ? '' : 's'}`,
       noResults: 'No materials match the selected filters.',
       availableNow: 'Available now', comingSoon: 'Coming after the session',
@@ -39,9 +39,9 @@
       opening: 'افتتاح', trainingDay: 'اليوم', modules: 'الوحدات', activity: 'نوع النشاط', lecturers: 'المحاضرون', format: 'النمط', time: 'الوقت',
       viewMaterials: 'عرض مواد هذا اليوم', noMaterials: 'ستُضاف مواد هذا اليوم هنا بعد انتهاء الجلسة.',
       fullProgram: 'البرنامج الكامل', downloadPdf: 'عرض برنامج PDF', downloadDocx: 'تحميل برنامج DOCX',
-      allDays: 'كل الأيام', allTypes: 'كل الأنواع', slides: 'شرائح', video: 'فيديو', drive: 'مجلد مشترك',
+      allDays: 'كل الأيام', allTypes: 'كل الأنواع', slides: 'شرائح', video: 'فيديو', drive: 'مجلد مشترك', notebook: 'دفتر Colab', file: 'ملفات عملية',
       searchPlaceholder: 'ابحث في المواد بالعنوان أو اسم المحاضر', clearSearch: 'مسح البحث',
-      open: 'فتح', viewPdf: 'عرض PDF', download: 'تحميل', watch: 'المشاهدة على YouTube', openFolder: 'فتح المجلد المشترك',
+      open: 'فتح', viewPdf: 'عرض PDF', download: 'تحميل', watch: 'المشاهدة على YouTube', openFolder: 'فتح المجلد المشترك', openNotebook: 'فتح في Colab', downloadPack: 'تحميل حزمة الملفات',
       resourcesFound: count => `${count} ${count === 1 ? 'مادة' : 'مواد'}`,
       noResults: 'لا توجد مواد مطابقة لعوامل التصفية المحددة.',
       availableNow: 'متاحة الآن', comingSoon: 'ستتاح بعد الجلسة',
@@ -52,8 +52,8 @@
   };
   const tr = key => copy[language()][key];
 
-  let selectedProgramDay = 'day-2';
-  let selectedMaterialsDay = 'day-2';
+  let selectedProgramDay = 'day-3';
+  let selectedMaterialsDay = 'day-3';
   let selectedType = 'all';
   let searchTerm = '';
 
@@ -198,13 +198,19 @@
   }
 
   function materialTypeLabel(type) {
-    return type === 'slides' ? tr('slides') : type === 'video' ? tr('video') : tr('drive');
+    if (type === 'slides') return tr('slides');
+    if (type === 'video') return tr('video');
+    if (type === 'drive') return tr('drive');
+    if (type === 'notebook') return tr('notebook');
+    return tr('file');
   }
 
   function materialIcon(type) {
     if (type === 'slides') return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg>';
     if (type === 'video') return '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3z"/></svg>';
-    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 2h9v11H3z"/><path d="M3 10h18"/></svg>';
+    if (type === 'drive') return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h7l2 2h9v11H3z"/><path d="M3 10h18"/></svg>';
+    if (type === 'notebook') return '<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m8 9-2 2 2 2M16 9l2 2-2 2M10 20h4"/></svg>';
+    return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v16H6z"/><path d="M14 2v5h5M9 12h6M9 16h6"/></svg>';
   }
 
   function resourceCard(resource) {
@@ -229,6 +235,28 @@
           <div class="material-card-top"><span class="material-type">${materialIcon(resource.type)}${materialTypeLabel(resource.type)}</span><span>${meta}</span></div>
           <h3>${title}</h3><p class="material-presenter">${presenter}</p><p>${description}</p>
           <div class="material-actions"><a class="button button--navy" href="${resource.url}" target="_blank" rel="noopener noreferrer">${tr('openFolder')}</a></div>
+        </div>
+      </article>`;
+    }
+    if (resource.type === 'notebook') {
+      return `<article class="material-card material-card--drive material-card--notebook">
+        <div class="material-drive-visual material-notebook-visual">${materialIcon(resource.type)}<span>COLAB</span></div>
+        <div class="material-card-body">
+          <div class="material-card-top"><span class="material-type">${materialIcon(resource.type)}${materialTypeLabel(resource.type)}</span><span>${meta}</span></div>
+          <h3>${title}</h3><p class="material-presenter">${presenter}</p><p>${description}</p>
+          <div class="material-actions"><a class="button button--navy" href="${resource.url}" target="_blank" rel="noopener noreferrer">${tr('openNotebook')}</a></div>
+        </div>
+      </article>`;
+    }
+    if (resource.type === 'file') {
+      const attachments = Array.isArray(resource.attachments) ? resource.attachments : [];
+      return `<article class="material-card material-card--drive material-card--file">
+        <div class="material-drive-visual material-file-visual">${materialIcon(resource.type)}<span>FILES</span></div>
+        <div class="material-card-body">
+          <div class="material-card-top"><span class="material-type">${materialIcon(resource.type)}${materialTypeLabel(resource.type)}</span><span>${meta}</span></div>
+          <h3>${title}</h3><p class="material-presenter">${presenter}</p><p>${description}</p>
+          ${attachments.length ? `<div class="material-file-list">${attachments.map(item => `<a href="${item.url}" download><span>${text(item.label)}</span><small>↓</small></a>`).join('')}</div>` : ''}
+          <div class="material-actions"><a class="button button--navy" href="${resource.url}" download>${tr('downloadPack')}</a></div>
         </div>
       </article>`;
     }
@@ -273,7 +301,7 @@
   function renderMaterialFilters() {
     const filters = $('#materials-type-filters');
     if (!filters) return;
-    const types = ['all', 'slides', 'video', 'drive'];
+    const types = ['all', 'slides', 'video', 'drive', 'notebook', 'file'];
     filters.innerHTML = types.map(type => `<button type="button" class="material-filter${selectedType === type ? ' is-active' : ''}" data-material-type="${type}">${type === 'all' ? tr('allTypes') : materialTypeLabel(type)}</button>`).join('');
     $$('[data-material-type]', filters).forEach(button => button.addEventListener('click', () => {
       selectedType = button.dataset.materialType;

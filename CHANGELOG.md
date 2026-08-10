@@ -1,5 +1,19 @@
 # Changelog
 
+## V3.1.3 - Training Day 3 Completion and Materials
+
+- Marked Training Day 3 on 10 August 2026 as completed.
+- Updated the announcement bar, hero copy, status summary, and workshop recap to show four completed workshop events.
+- Added eight optimized Training Day 3 photographs and a fourth gallery tab.
+- The selected workshop gallery continues to show six photographs and reshuffle every 10 seconds.
+- Added the Training Day 3 Google Drive folder and Google Colab notebook.
+- Added `Modeling Small Molecules Using Avogadro & OpenBabel` as a browser-viewable PDF and original PowerPoint download.
+- Added `Molecular Optimizer Pro` as a browser-viewable PDF and original PowerPoint download.
+- Added practical MOL2, XYZ, SDF, and SMILES files with individual downloads and a ZIP bundle.
+- Added optimized presentation thumbnails.
+- Extended materials filters with Colab notebook and practical-file categories.
+- Program and materials sections now open on Training Day 3 by default.
+
 ## V3.1.2 - Training Day 2 Completion and Materials
 
 - Marked Training Day 2 on 8 August 2026 as completed.
