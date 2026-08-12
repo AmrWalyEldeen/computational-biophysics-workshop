@@ -1,5 +1,18 @@
 # Changelog
 
+## V3.2.0 - Training Day 4 Materials Priority
+
+- Marked Training Day 4 on 12 August 2026 as completed.
+- Moved the Materials section above the Program section so participant resources are easier to reach.
+- Training Day 4 now opens by default in both Materials and Program.
+- Added the Training Day 4 Google Drive folder and MultiTargetDocking V17.0 Google Colab notebook.
+- Added a 9-slide MultiTargetDocking V17.0 guide as PowerPoint and browser-viewable PDF.
+- Added the 22-slide Molecular Docking - From Theory to Practice deck as PowerPoint and browser-viewable PDF.
+- Added the complete docking practical ZIP and individual PDB, SMILES, config, HTML, Python, BAT, and reference-link files.
+- Added ten optimized Training Day 4 photographs and a fifth gallery tab.
+- Kept gallery behavior at six visible photographs with reshuffling every 10 seconds.
+- Updated hero, announcement, recap, schedule status, and bilingual copy to reflect five completed workshop events.
+
 ## V3.1.4 - Training Day 3 Gallery Expansion
 
 - Added twenty more optimized Training Day 3 photographs to the Day 3 gallery.

@@ -727,5 +727,57 @@ window.WORKSHOP_DATA = {
       "title": "Training Day 3 - full audience view during the computational chemistry session",
       "titleAr": "اليوم التدريبي الثالث - لقطة كاملة للحضور خلال جلسة الكيمياء الحاسوبية"
     }
+  ],
+  "trainingDayFourGallery": [
+    {
+      "src": "assets/training-day-4/training-day-4-01.webp",
+      "title": "Training Day 4 - full classroom during the docking practical session",
+      "titleAr": "اليوم التدريبي الرابع - القاعة كاملة خلال الجلسة العملية للالتحام"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-02.webp",
+      "title": "Training Day 4 - participants working through the docking workflow",
+      "titleAr": "اليوم التدريبي الرابع - المشاركون يطبقون سير عمل الالتحام"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-03.webp",
+      "title": "Training Day 4 - MultiTargetDocking V17.0 explanation",
+      "titleAr": "اليوم التدريبي الرابع - شرح MultiTargetDocking V17.0"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-04.webp",
+      "title": "Training Day 4 - interactive discussion during the Colab workflow",
+      "titleAr": "اليوم التدريبي الرابع - نقاش تفاعلي خلال سير عمل Colab"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-05.webp",
+      "title": "Training Day 4 - presenter introducing the docking notebook",
+      "titleAr": "اليوم التدريبي الرابع - المحاضر يقدم دفتر الالتحام"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-06.webp",
+      "title": "Training Day 4 - MultiTargetDocking workflow presentation",
+      "titleAr": "اليوم التدريبي الرابع - عرض سير عمل MultiTargetDocking"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-07.webp",
+      "title": "Training Day 4 - practical docking session from the back of the room",
+      "titleAr": "اليوم التدريبي الرابع - الجلسة العملية للالتحام من مؤخرة القاعة"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-08.webp",
+      "title": "Training Day 4 - participants following the computational docking exercise",
+      "titleAr": "اليوم التدريبي الرابع - المشاركون يتابعون تطبيق الالتحام الحاسوبي"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-09.webp",
+      "title": "Training Day 4 - classroom view during hands-on docking",
+      "titleAr": "اليوم التدريبي الرابع - منظر القاعة خلال التطبيق العملي للالتحام"
+    },
+    {
+      "src": "assets/training-day-4/training-day-4-10.webp",
+      "title": "Training Day 4 - workshop audience during the docking session",
+      "titleAr": "اليوم التدريبي الرابع - حضور الورشة خلال جلسة الالتحام"
+    }
   ]
 };

@@ -126,3 +126,15 @@ assets/training-day-3/
 ```
 
 The current structure demonstrates how to combine local PDFs, original PowerPoint files, Google Drive folders, Google Colab notebooks, practical molecule files, thumbnails, and day-specific activity photographs under one workshop date.
+
+## Training Day 4 example - V3.2.0
+
+Training Day 4 demonstrates the recommended participant-first structure:
+
+- shared Google Drive folder
+- Google Colab notebook
+- browser-viewable PDF plus original PowerPoint
+- practical ZIP package
+- optional individual practical-file downloads
+
+Day 4 assets are stored in `assets/materials/day-4/`, while preview images are stored in `assets/materials/thumbnails/`.

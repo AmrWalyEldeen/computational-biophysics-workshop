@@ -1,44 +1,41 @@
-# Update Existing GitHub Website to V3.1.4
+# Update Existing GitHub Website to V3.2.0
+
+This update prioritizes participant materials and adds Training Day 4.
 
 1. Extract the update ZIP file.
 2. Open the GitHub repository.
 3. Select **Add file > Upload files**.
 4. Upload everything inside the extracted update folder.
-5. Allow GitHub to replace existing files and add the new gallery images.
-6. Commit with: `Add more Training Day 3 gallery photos`
+5. Allow GitHub to replace existing files and add the new Day 4 folders.
+6. Commit with: `Add Training Day 4 materials and gallery`
 7. Wait 1-3 minutes for GitHub Pages.
 8. Force-refresh the website: `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.
 
-Important new files:
+## Important new folders
 
 ```text
-assets/training-day-3/training-day-3-09.webp
-assets/training-day-3/training-day-3-10.webp
-assets/training-day-3/training-day-3-11.webp
-assets/training-day-3/training-day-3-12.webp
-assets/training-day-3/training-day-3-13.webp
-assets/training-day-3/training-day-3-14.webp
-assets/training-day-3/training-day-3-15.webp
-assets/training-day-3/training-day-3-16.webp
-assets/training-day-3/training-day-3-17.webp
-assets/training-day-3/training-day-3-18.webp
-assets/training-day-3/training-day-3-19.webp
-assets/training-day-3/training-day-3-20.webp
-assets/training-day-3/training-day-3-21.webp
-assets/training-day-3/training-day-3-22.webp
-assets/training-day-3/training-day-3-23.webp
-assets/training-day-3/training-day-3-24.webp
-assets/training-day-3/training-day-3-25.webp
-assets/training-day-3/training-day-3-26.webp
-assets/training-day-3/training-day-3-27.webp
-assets/training-day-3/training-day-3-28.webp
+assets/materials/day-4/
+assets/training-day-4/
 ```
 
-The update also replaces:
+## Important new thumbnails
 
 ```text
+assets/materials/thumbnails/multitarget-docking-v17.webp
+assets/materials/thumbnails/molecular-docking-theory-practice.webp
+```
+
+## Replaced website files
+
+```text
+index.html
 assets/js/data.js
-CHANGELOG.md
+assets/js/main.js
+assets/js/program-materials-data.js
+assets/js/program-materials.js
 README.md
+CHANGELOG.md
 UPDATE-INSTRUCTIONS.md
 ```
+
+The Materials section is now above Program, and Training Day 4 is the default selected day.

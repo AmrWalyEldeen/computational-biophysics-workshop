@@ -1,21 +1,31 @@
-# Computational Biophysics Workshop Website - V3.1.4
+# Computational Biophysics Workshop Website - V3.2.0
 
 A complete static website prepared for GitHub Pages. It uses plain HTML, CSS, and JavaScript, so no build process or server-side code is required.
 
-## Included
+## V3.2.0 priority
 
-- Responsive desktop, tablet, and mobile layouts
-- English/Arabic language switch with RTL support
-- Interactive August 2026 program calendar
-- Detailed daily agenda with modules, lecturers, activity type, time, and delivery mode
-- Materials library organized by workshop day and resource type
-- Search and filters for slides, videos, shared folders, Colab notebooks, and practical files
-- Opening Day learning materials and photographs
-- Training Day 1 learning materials, video, Drive folder, and photographs
-- Training Day 2 Protein Modeling materials, Drive folder, and photographs
-- Training Day 3 small-molecule modeling materials, Molecular Optimizer workflow, Colab notebook, Drive folder, molecular data files, and an expanded photograph gallery
-- Multi-day gallery selector with six images displayed at a time and reshuffled every 10 seconds
-- Presenter profiles, official posters, location, and institutional information
+The learning materials are now positioned **above the program** in the website and Training Day 4 is selected by default. This makes the latest participant resources immediately accessible before the schedule/calendar.
+
+## Training Day 4 - 12 August 2026
+
+Training Day 4 is marked completed and includes:
+
+- Training Day 4 shared Google Drive folder
+- MultiTargetDocking V17.0 Google Colab notebook
+- MultiTargetDocking V17.0 notebook guide: PowerPoint + browser-viewable PDF
+- Molecular Docking - From Theory to Practice: PowerPoint + browser-viewable PDF
+- Practical docking ZIP package
+- Individual practical files: PDB, SMILES, Vina configuration, HTML docking game, Python helper, BAT log summarizer, and Dimorphite-DL reference link
+- Ten optimized Training Day 4 photographs
+
+## Website behavior
+
+- Materials appear before the interactive program calendar.
+- Training Day 4 opens by default in both Materials and Program.
+- The hero and workshop update link directly to Training Day 4 materials.
+- The workshop gallery includes Opening Day and Training Days 1-4.
+- The selected gallery displays six photographs and reshuffles every 10 seconds.
+- English/Arabic switching and RTL support remain available.
 
 ## Deploy on GitHub Pages
 
@@ -25,22 +35,14 @@ A complete static website prepared for GitHub Pages. It uses plain HTML, CSS, an
 4. Under **Build and deployment**, choose **Deploy from a branch**.
 5. Select the `main` branch and `/ (root)`, then save.
 
-## Main files
+## Important Day 4 files
 
-- `index.html` - website sections and structure
-- `assets/css/styles.css` - visual design and responsive rules
-- `assets/js/data.js` - presenters, links, and activity galleries
-- `assets/js/main.js` - language mode, navigation, gallery shuffle, and dialogs
-- `assets/js/program-materials-data.js` - complete program and materials metadata
-- `assets/js/program-materials.js` - calendar and materials-library behavior
-- `assets/materials/opening-day/` - Opening Day presentation files
-- `assets/materials/day-1/` - Training Day 1 presentation files
-- `assets/materials/day-2/` - Training Day 2 presentation files
-- `assets/materials/day-3/` - Training Day 3 slides and practical molecule files
-- `assets/training-day-1/` - Training Day 1 photographs
-- `assets/training-day-2/` - Training Day 2 photographs
-- `assets/training-day-3/` - Training Day 3 photographs
-- `MATERIALS-GUIDE.md` - instructions for adding future materials
+```text
+assets/materials/day-4/
+assets/training-day-4/
+assets/materials/thumbnails/multitarget-docking-v17.webp
+assets/materials/thumbnails/molecular-docking-theory-practice.webp
+```
 
 ## Current workshop status
 
@@ -49,7 +51,8 @@ A complete static website prepared for GitHub Pages. It uses plain HTML, CSS, an
 - Training Day 1: completed on 5 August 2026
 - Training Day 2: completed on 8 August 2026
 - Training Day 3: completed on 10 August 2026
-- Next scheduled session: Training Day 4 on 12 August 2026
+- Training Day 4: completed on 12 August 2026
+- Next scheduled session: Training Day 5 on 15 August 2026
 - Attendance form: `https://forms.gle/hbZJExKjhhXJ5MBY7`
 
 ## Local preview

@@ -408,7 +408,8 @@ window.WORKSHOP_PROGRAM = {
             }
           ]
         }
-      ]
+      ],
+      "materialsAvailable": true
     },
     {
       "id": "day-5",
@@ -1399,6 +1400,177 @@ window.WORKSHOP_PROGRAM = {
             "ar": "أمثلة SMILES"
           },
           "url": "assets/materials/day-3/compounds.smiles"
+        }
+      ]
+    },
+    {
+      "id": "day-4-drive",
+      "dayId": "day-4",
+      "type": "drive",
+      "title": {
+        "en": "Training Day 4 shared Google Drive folder",
+        "ar": "مجلد Google Drive المشترك لليوم التدريبي الرابع"
+      },
+      "presenter": {
+        "en": "Workshop training team",
+        "ar": "فريق تدريب الورشة"
+      },
+      "description": {
+        "en": "Open the shared Day 4 folder for docking resources, supporting files, and practical-session materials.",
+        "ar": "افتح المجلد المشترك لليوم التدريبي الرابع للوصول إلى موارد الالتحام والملفات الداعمة ومواد الجلسة العملية."
+      },
+      "url": "https://drive.google.com/drive/folders/1kFEAEdHNVBdHMrDrmn6fhrWz12tQ3_9P",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Google Drive folder",
+        "ar": "مجلد Google Drive"
+      }
+    },
+    {
+      "id": "day-4-colab",
+      "dayId": "day-4",
+      "type": "notebook",
+      "title": {
+        "en": "MultiTargetDocking V17.0 - Google Colab notebook",
+        "ar": "MultiTargetDocking V17.0 - دفتر Google Colab"
+      },
+      "presenter": {
+        "en": "Training Day 4 docking session",
+        "ar": "جلسة الالتحام في اليوم التدريبي الرابع"
+      },
+      "description": {
+        "en": "Open the interactive multi-target, multi-ligand docking workflow used for receptor and ligand preparation, pocket definition, optional redocking validation, production docking, pose clustering, quality control, and organized result reporting.",
+        "ar": "افتح سير عمل الالتحام التفاعلي متعدد الأهداف ومتعدد الليجندات المستخدم لتحضير المستقبلات والليجندات وتحديد الجيب والتحقق الاختياري بإعادة الالتحام والالتحام الإنتاجي وتجميع الأوضاع وضبط الجودة وتنظيم تقارير النتائج."
+      },
+      "url": "https://colab.research.google.com/drive/11RcacPSMRs-TiL-BVTMKl-hBFuIuGPmE?usp=sharing",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Interactive Google Colab notebook",
+        "ar": "دفتر Google Colab تفاعلي"
+      }
+    },
+    {
+      "id": "day-4-colab-guide",
+      "dayId": "day-4",
+      "type": "slides",
+      "title": {
+        "en": "MultiTargetDocking V17.0 - Notebook Guide",
+        "ar": "MultiTargetDocking V17.0 - دليل دفتر Colab"
+      },
+      "presenter": {
+        "en": "Training Day 4 docking session",
+        "ar": "جلسة الالتحام في اليوم التدريبي الرابع"
+      },
+      "description": {
+        "en": "Nine-slide visual guide to the Colab workflow, including run setup, receptor preparation and pocket definition, ligand preparation, docking/redocking parameters, analysis and scoring, reporting, output folders, and result interpretation.",
+        "ar": "دليل مرئي من تسع شرائح لسير عمل Colab، يشمل إعداد التشغيل وتحضير المستقبل وتحديد الجيب وتحضير الليجندات ومعاملات الالتحام وإعادة الالتحام والتحليل والتقييم والتقارير ومجلدات المخرجات وتفسير النتائج."
+      },
+      "url": "assets/materials/day-4/multitarget-docking-v17-colab-guide.pdf",
+      "downloadUrl": "assets/materials/day-4/multitarget-docking-v17-colab-guide.pptx",
+      "thumbnail": "assets/materials/thumbnails/multitarget-docking-v17.webp",
+      "meta": {
+        "en": "PowerPoint + PDF - 9 slides",
+        "ar": "PowerPoint + PDF - 9 شرائح"
+      }
+    },
+    {
+      "id": "day-4-docking-theory-practice",
+      "dayId": "day-4",
+      "type": "slides",
+      "title": {
+        "en": "Molecular Docking - From Theory to Practice",
+        "ar": "الالتحام الجزيئي - من النظرية إلى التطبيق"
+      },
+      "presenter": {
+        "en": "Training Day 4 docking session",
+        "ar": "جلسة الالتحام في اليوم التدريبي الرابع"
+      },
+      "description": {
+        "en": "A 22-slide training deck covering docking foundations, virtual screening, protein structures and PDB concepts, search and scoring, redocking validation, binding models, and a practical AutoDock Vina/OpenBabel workflow.",
+        "ar": "عرض تدريبي من 22 شريحة يغطي أساسيات الالتحام والفحص الافتراضي وتراكيب البروتين ومفاهيم PDB والبحث والتقييم والتحقق بإعادة الالتحام ونماذج الارتباط وسير عمل عملي باستخدام AutoDock Vina وOpenBabel."
+      },
+      "url": "assets/materials/day-4/molecular-docking-theory-to-practice.pdf",
+      "downloadUrl": "assets/materials/day-4/molecular-docking-theory-to-practice.pptx",
+      "thumbnail": "assets/materials/thumbnails/molecular-docking-theory-practice.webp",
+      "meta": {
+        "en": "PowerPoint + PDF - 22 slides",
+        "ar": "PowerPoint + PDF - 22 شريحة"
+      }
+    },
+    {
+      "id": "day-4-practical-files",
+      "dayId": "day-4",
+      "type": "file",
+      "title": {
+        "en": "Day 4 docking practical files",
+        "ar": "ملفات التطبيق العملي للالتحام - اليوم الرابع"
+      },
+      "presenter": {
+        "en": "Training Day 4 practical session",
+        "ar": "الجلسة العملية لليوم التدريبي الرابع"
+      },
+      "description": {
+        "en": "Complete practical package for the docking exercise, including the 1IEP receptor structure, example SMILES library, Vina configuration template, docking game, protonation-renaming script, log-summary batch file, and the Dimorphite-DL reference link.",
+        "ar": "حزمة التطبيق العملي الكاملة لتدريب الالتحام، وتشمل تركيب المستقبل 1IEP ومكتبة SMILES نموذجية وقالب إعداد Vina ولعبة الالتحام وسكربت إعادة تسمية حالات البروتنة وملف تلخيص السجلات ورابط Dimorphite-DL."
+      },
+      "url": "assets/materials/day-4/training-day-4-docking-materials.zip",
+      "downloadUrl": "assets/materials/day-4/training-day-4-docking-materials.zip",
+      "thumbnail": "",
+      "meta": {
+        "en": "ZIP + PDB + SMILES + config + scripts + HTML",
+        "ar": "ZIP + PDB + SMILES + إعدادات + سكربتات + HTML"
+      },
+      "attachments": [
+        {
+          "label": {
+            "en": "Receptor structure - 1IEP.pdb",
+            "ar": "تركيب المستقبل - 1IEP.pdb"
+          },
+          "url": "assets/materials/day-4/1IEP.pdb"
+        },
+        {
+          "label": {
+            "en": "Example compound library - compounds.smiles",
+            "ar": "مكتبة المركبات النموذجية - compounds.smiles"
+          },
+          "url": "assets/materials/day-4/compounds.smiles"
+        },
+        {
+          "label": {
+            "en": "AutoDock Vina configuration template - conf.txt",
+            "ar": "قالب إعداد AutoDock Vina - conf.txt"
+          },
+          "url": "assets/materials/day-4/conf.txt"
+        },
+        {
+          "label": {
+            "en": "Docking game - HTML",
+            "ar": "لعبة الالتحام - HTML"
+          },
+          "url": "assets/materials/day-4/Dock_game_final.html"
+        },
+        {
+          "label": {
+            "en": "Protonation naming helper - Python",
+            "ar": "مساعد تسمية حالات البروتنة - Python"
+          },
+          "url": "assets/materials/day-4/rename_ph.py"
+        },
+        {
+          "label": {
+            "en": "Vina log summarizer - BAT",
+            "ar": "ملخص سجلات Vina - BAT"
+          },
+          "url": "assets/materials/day-4/summarize_logs.bat"
+        },
+        {
+          "label": {
+            "en": "Dimorphite-DL reference link",
+            "ar": "رابط مرجعي لـ Dimorphite-DL"
+          },
+          "url": "assets/materials/day-4/link_dimorphite_dl.txt"
         }
       ]
     }
