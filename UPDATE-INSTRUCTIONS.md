@@ -1,41 +1,29 @@
-# Update Existing GitHub Website to V3.2.0
+# Update Existing GitHub Website to V3.3.0
 
-This update prioritizes participant materials and adds Training Day 4.
+This package updates the existing Computational Biophysics Workshop website with Training Day 5 materials and photographs.
 
-1. Extract the update ZIP file.
-2. Open the GitHub repository.
-3. Select **Add file > Upload files**.
-4. Upload everything inside the extracted update folder.
-5. Allow GitHub to replace existing files and add the new Day 4 folders.
-6. Commit with: `Add Training Day 4 materials and gallery`
-7. Wait 1-3 minutes for GitHub Pages.
-8. Force-refresh the website: `Ctrl + F5` on Windows or `Cmd + Shift + R` on macOS.
-
-## Important new folders
-
-```text
-assets/materials/day-4/
-assets/training-day-4/
-```
-
-## Important new thumbnails
-
-```text
-assets/materials/thumbnails/multitarget-docking-v17.webp
-assets/materials/thumbnails/molecular-docking-theory-practice.webp
-```
-
-## Replaced website files
+## Replace these existing files
 
 ```text
 index.html
-assets/js/data.js
-assets/js/main.js
-assets/js/program-materials-data.js
-assets/js/program-materials.js
 README.md
 CHANGELOG.md
+MATERIALS-GUIDE.md
 UPDATE-INSTRUCTIONS.md
+assets/js/main.js
+assets/js/data.js
+assets/js/program-materials.js
+assets/js/program-materials-data.js
 ```
 
-The Materials section is now above Program, and Training Day 4 is the default selected day.
+## Add these new folders/files
+
+```text
+assets/materials/day-5/
+assets/training-day-5/
+assets/materials/thumbnails/gaussian-09-tutorial.webp
+assets/materials/thumbnails/computational-chemistry.webp
+assets/materials/thumbnails/quantum-chemistry-basics.webp
+```
+
+Upload the contents of the update ZIP to the repository root and allow GitHub to replace files with matching names.

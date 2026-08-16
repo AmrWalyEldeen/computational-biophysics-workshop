@@ -138,3 +138,8 @@ Training Day 4 demonstrates the recommended participant-first structure:
 - optional individual practical-file downloads
 
 Day 4 assets are stored in `assets/materials/day-4/`, while preview images are stored in `assets/materials/thumbnails/`.
+
+
+## Training Day 5 example - V3.3.0
+
+Day 5 assets are stored in `assets/materials/day-5/`, while preview images are stored in `assets/materials/thumbnails/`. The Day 5 library includes one shared Drive folder, three unique PDF resources, and one combined ZIP download. The site intentionally removes exact duplicate uploads from the participant-facing list.

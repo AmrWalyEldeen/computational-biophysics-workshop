@@ -486,7 +486,8 @@ window.WORKSHOP_PROGRAM = {
             }
           ]
         }
-      ]
+      ],
+      "materialsAvailable": true
     },
     {
       "id": "day-6",
@@ -1571,6 +1572,149 @@ window.WORKSHOP_PROGRAM = {
             "ar": "رابط مرجعي لـ Dimorphite-DL"
           },
           "url": "assets/materials/day-4/link_dimorphite_dl.txt"
+        }
+      ]
+    },
+    {
+      "id": "day-5-drive",
+      "dayId": "day-5",
+      "type": "drive",
+      "title": {
+        "en": "Training Day 5 shared Google Drive folder",
+        "ar": "مجلد Google Drive المشترك لليوم التدريبي الخامس"
+      },
+      "presenter": {
+        "en": "Dr. Mahmoud A. Noamaan",
+        "ar": "د. محمود أ. نعمان"
+      },
+      "description": {
+        "en": "Open the shared Day 5 folder for quantum mechanics, computational chemistry, DFT, Gaussian 09, GaussView, and supporting practical-session resources.",
+        "ar": "افتح المجلد المشترك لليوم التدريبي الخامس للوصول إلى مواد ميكانيكا الكم والكيمياء الحاسوبية وDFT وGaussian 09 وGaussView وملفات الجلسة العملية الداعمة."
+      },
+      "url": "https://drive.google.com/drive/folders/19NRD-4dbETVS_axe1aVdsty9lDHAF-3M",
+      "downloadUrl": "",
+      "thumbnail": "",
+      "meta": {
+        "en": "Google Drive folder",
+        "ar": "مجلد Google Drive"
+      }
+    },
+    {
+      "id": "day-5-gaussian-09",
+      "dayId": "day-5",
+      "type": "slides",
+      "title": {
+        "en": "Gaussian 09 Tutorial",
+        "ar": "دليل Gaussian 09"
+      },
+      "presenter": {
+        "en": "Dr. Mahmoud A. Noamaan · Cairo University",
+        "ar": "د. محمود أ. نعمان · جامعة القاهرة"
+      },
+      "description": {
+        "en": "A 54-page tutorial that connects quantum-chemical theory to practical Gaussian 09 work: choosing basis sets and levels of theory, preparing input files, running calculations, visualizing with GaussView, and practicing geometry optimization, molecular orbitals, TD-DFT, and UV-Vis workflows.",
+        "ar": "دليل من 54 صفحة يربط أساسيات الكيمياء الكمية بالتطبيق العملي في Gaussian 09، من اختيار مجموعات الأساس ومستويات النظرية وإعداد ملفات الإدخال وتشغيل الحسابات إلى العرض باستخدام GaussView وتطبيقات تحسين الهندسة والمدارات الجزيئية وTD-DFT وUV-Vis."
+      },
+      "url": "assets/materials/day-5/gaussian-09-tutorial-mahmoud-noamaan.pdf",
+      "downloadUrl": "assets/materials/day-5/gaussian-09-tutorial-mahmoud-noamaan.pdf",
+      "thumbnail": "assets/materials/thumbnails/gaussian-09-tutorial.webp",
+      "meta": {
+        "en": "PDF · 54 pages",
+        "ar": "PDF · 54 صفحة"
+      }
+    },
+    {
+      "id": "day-5-computational-chemistry",
+      "dayId": "day-5",
+      "type": "slides",
+      "title": {
+        "en": "Computational Chemistry",
+        "ar": "الكيمياء الحاسوبية"
+      },
+      "presenter": {
+        "en": "Dr. Mahmoud A. Noamaan · Cairo University",
+        "ar": "د. محمود أ. نعمان · جامعة القاهرة"
+      },
+      "description": {
+        "en": "A 40-page computational-chemistry lecture covering the field’s goals, molecular mechanics and dynamics, quantum-mechanical approaches, ab initio and semi-empirical methods, DFT, Hartree-Fock and post-HF methods, basis-set concepts, and calculated molecular properties.",
+        "ar": "محاضرة من 40 صفحة في الكيمياء الحاسوبية تغطي أهداف المجال والميكانيكا والديناميكا الجزيئية والمناهج الكمية وطرق ab initio والطرق شبه التجريبية وDFT وHartree-Fock وما بعده ومفاهيم مجموعات الأساس والخواص الجزيئية المحسوبة."
+      },
+      "url": "assets/materials/day-5/computational-chemistry-mahmoud-noamaan.pdf",
+      "downloadUrl": "assets/materials/day-5/computational-chemistry-mahmoud-noamaan.pdf",
+      "thumbnail": "assets/materials/thumbnails/computational-chemistry.webp",
+      "meta": {
+        "en": "PDF · 40 pages",
+        "ar": "PDF · 40 صفحة"
+      }
+    },
+    {
+      "id": "day-5-quantum-basics",
+      "dayId": "day-5",
+      "type": "slides",
+      "title": {
+        "en": "Quantum Chemistry Basics",
+        "ar": "أساسيات الكيمياء الكمية"
+      },
+      "presenter": {
+        "en": "Dr. Mahmoud A. Noamaan · Cairo University",
+        "ar": "د. محمود أ. نعمان · جامعة القاهرة"
+      },
+      "description": {
+        "en": "A 75-page foundation deck moving from classical mechanics to quantum mechanics, including the uncertainty principle, wavefunctions, operators and eigenvalues, the postulates of quantum mechanics, the Schrödinger equation, and the electronic-structure quantities used in quantum-chemical calculations.",
+        "ar": "عرض تأسيسي من 75 صفحة ينتقل من الميكانيكا الكلاسيكية إلى ميكانيكا الكم، ويتناول مبدأ عدم اليقين والدوال الموجية والمؤثرات والقيم الذاتية ومسلمات ميكانيكا الكم ومعادلة شرودنغر والكميات البنيوية الإلكترونية المستخدمة في الحسابات الكيميائية الكمية."
+      },
+      "url": "assets/materials/day-5/quantum-chemistry-basics-mahmoud-noamaan.pdf",
+      "downloadUrl": "assets/materials/day-5/quantum-chemistry-basics-mahmoud-noamaan.pdf",
+      "thumbnail": "assets/materials/thumbnails/quantum-chemistry-basics.webp",
+      "meta": {
+        "en": "PDF · 75 pages",
+        "ar": "PDF · 75 صفحة"
+      }
+    },
+    {
+      "id": "day-5-pdf-pack",
+      "dayId": "day-5",
+      "type": "file",
+      "title": {
+        "en": "Training Day 5 complete PDF pack",
+        "ar": "حزمة PDF الكاملة لليوم التدريبي الخامس"
+      },
+      "presenter": {
+        "en": "Quantum chemistry practical session",
+        "ar": "الجلسة العملية للكيمياء الكمية"
+      },
+      "description": {
+        "en": "Download the three unique Day 5 course PDFs together in one package. The second uploaded copy of Quantum Chemistry Basics was identical to the first, so it is intentionally listed only once to keep the library clean.",
+        "ar": "حمّل ملفات PDF الثلاثة الفريدة لليوم التدريبي الخامس معًا في حزمة واحدة. كانت النسخة الثانية المرفوعة من ملف أساسيات الكيمياء الكمية مطابقة تمامًا للأولى، لذلك أُدرجت نسخة واحدة فقط للحفاظ على تنظيم المكتبة."
+      },
+      "url": "assets/materials/day-5/training-day-5-quantum-chemistry-materials.zip",
+      "downloadUrl": "assets/materials/day-5/training-day-5-quantum-chemistry-materials.zip",
+      "thumbnail": "",
+      "meta": {
+        "en": "ZIP · 3 unique PDFs",
+        "ar": "ZIP · 3 ملفات PDF فريدة"
+      },
+      "attachments": [
+        {
+          "label": {
+            "en": "Gaussian 09 Tutorial · PDF",
+            "ar": "دليل Gaussian 09 · PDF"
+          },
+          "url": "assets/materials/day-5/gaussian-09-tutorial-mahmoud-noamaan.pdf"
+        },
+        {
+          "label": {
+            "en": "Computational Chemistry · PDF",
+            "ar": "الكيمياء الحاسوبية · PDF"
+          },
+          "url": "assets/materials/day-5/computational-chemistry-mahmoud-noamaan.pdf"
+        },
+        {
+          "label": {
+            "en": "Quantum Chemistry Basics · PDF",
+            "ar": "أساسيات الكيمياء الكمية · PDF"
+          },
+          "url": "assets/materials/day-5/quantum-chemistry-basics-mahmoud-noamaan.pdf"
         }
       ]
     }

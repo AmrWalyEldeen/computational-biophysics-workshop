@@ -779,5 +779,42 @@ window.WORKSHOP_DATA = {
       "title": "Training Day 4 - workshop audience during the docking session",
       "titleAr": "اليوم التدريبي الرابع - حضور الورشة خلال جلسة الالتحام"
     }
+  ],
+  "trainingDayFiveGallery": [
+    {
+      "src": "assets/training-day-5/training-day-5-01.webp",
+      "title": "Training Day 5 - quantum chemistry lecture and classroom discussion",
+      "titleAr": "اليوم التدريبي الخامس - محاضرة الكيمياء الكمية ونقاش داخل القاعة"
+    },
+    {
+      "src": "assets/training-day-5/training-day-5-02.webp",
+      "title": "Training Day 5 - wide classroom view during the quantum mechanics session",
+      "titleAr": "اليوم التدريبي الخامس - لقطة واسعة للقاعة خلال جلسة ميكانيكا الكم"
+    },
+    {
+      "src": "assets/training-day-5/training-day-5-03.webp",
+      "title": "Training Day 5 - Gaussian and GaussView molecular visualization demonstration",
+      "titleAr": "اليوم التدريبي الخامس - عرض تطبيقي للتصور الجزيئي باستخدام Gaussian وGaussView"
+    },
+    {
+      "src": "assets/training-day-5/training-day-5-04.webp",
+      "title": "Training Day 5 - close-up of molecular structure modeling in GaussView",
+      "titleAr": "اليوم التدريبي الخامس - لقطة مقربة لنمذجة تركيب جزيئي في GaussView"
+    },
+    {
+      "src": "assets/training-day-5/training-day-5-05.webp",
+      "title": "Training Day 5 - quantum mechanics review and theory discussion",
+      "titleAr": "اليوم التدريبي الخامس - مراجعة ميكانيكا الكم ومناقشة الأساس النظري"
+    },
+    {
+      "src": "assets/training-day-5/training-day-5-06.webp",
+      "title": "Training Day 5 - quantum chemical methods lecture",
+      "titleAr": "اليوم التدريبي الخامس - محاضرة عن طرق الكيمياء الكمية"
+    },
+    {
+      "src": "assets/training-day-5/training-day-5-07.webp",
+      "title": "Training Day 5 - full classroom during the computational chemistry session",
+      "titleAr": "اليوم التدريبي الخامس - القاعة كاملة خلال جلسة الكيمياء الحاسوبية"
+    }
   ]
 };

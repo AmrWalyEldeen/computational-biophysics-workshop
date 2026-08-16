@@ -1,5 +1,17 @@
 # Changelog
 
+## V3.3.0 - Training Day 5 Quantum Chemistry Materials
+
+- Marked Training Day 5 on 15 August 2026 as completed.
+- Kept Materials above Program and switched the default participant view to Training Day 5.
+- Added the Training Day 5 Google Drive folder.
+- Added three unique PDFs: Gaussian 09 Tutorial, Computational Chemistry, and Quantum Chemistry Basics.
+- Deduplicated an identical second copy of Quantum Chemistry Basics.
+- Added a single ZIP pack containing all three unique Day 5 PDFs.
+- Added seven optimized Training Day 5 photographs and a sixth gallery tab.
+- Updated English and Arabic hero, status, schedule, gallery, and materials copy to reflect six completed workshop events.
+
+
 ## V3.2.0 - Training Day 4 Materials Priority
 
 - Marked Training Day 4 on 12 August 2026 as completed.

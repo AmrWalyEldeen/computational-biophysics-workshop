@@ -52,8 +52,8 @@
   };
   const tr = key => copy[language()][key];
 
-  let selectedProgramDay = 'day-4';
-  let selectedMaterialsDay = 'day-4';
+  let selectedProgramDay = 'day-5';
+  let selectedMaterialsDay = 'day-5';
   let selectedType = 'all';
   let searchTerm = '';
 
