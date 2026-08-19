@@ -1,0 +1,14 @@
+Training Day 7 practical archive contents (Downloads.rar)
+
+18 files total:
+- 1.jpeg
+- 2.jpeg
+- 1.1.mp4 through 1.9.mp4 (9 short videos)
+- run_NMRBox.sh
+- step4.0_minimization.mdp
+- step4.1_equilibration.mdp
+- step4.2_equilibration.mdp
+- step5_production.mdp
+- trial_final.pdb
+- commands.txt
+- gmx_before_prod.sub

@@ -1,5 +1,34 @@
 # Changelog
 
+## V3.5.0 - Training Day 7 Molecular Dynamics
+
+- Marked Training Day 7 on 19 August 2026 as completed and materials available.
+- Switched the default Materials, Program, and workshop gallery view to Training Day 7.
+- Added the shared Training Day 7 Google Drive folder.
+- Added the 24-page Molecular Dynamics Simulation PDF.
+- Added the 3-page CHARMM-GUI / GROMACS system-preparation guide by Donia Gamal Youssef Soliman.
+- Added direct CHARMM-GUI and GROMACS website resources.
+- Added two Google Colab notebooks.
+- Added the original practical RAR archive containing 18 files.
+- Added 12 unique optimized Training Day 7 photographs and an eighth workshop gallery tab.
+- Added participant-facing PDF thumbnails.
+- Added a dedicated website material type and filter.
+- Updated English and Arabic status, hero, gallery, schedule, and latest-material messaging.
+- Introduced new cache-busting JavaScript filenames (`v3.5.0`) to avoid stale browser data.
+
+## V3.4.0 - Training Day 6 Protein-Protein Docking
+
+- Marked Training Day 6 on 17 August 2026 as completed and materials available.
+- Switched the default Materials and Program view to Training Day 6.
+- Added the Training Day 6 shared Google Drive folder.
+- Added the 84-page Protein-Protein Docking lecture by Ahmed A. Ezat.
+- Added a participant-facing PDF thumbnail.
+- Added 18 optimized Training Day 6 photographs and a seventh workshop gallery tab.
+- Updated the hero, workshop status, gallery copy, and latest-material messaging.
+- Introduced new cache-busting JavaScript filenames (`v3.4.0`) to avoid stale browser data.
+
+# Changelog
+
 ## V3.3.0 - Training Day 5 Quantum Chemistry Materials
 
 - Marked Training Day 5 on 15 August 2026 as completed.
